@@ -1,0 +1,16 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Photographer Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch stylesheets/style.scss stylesheets/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pavel Kirillov",
+  "license": "ISC",
+  "devDependencies": {
+    "linthtml-config-htmlacademy": "^1.0.3",
+    "stylelint-config-htmlacademy": "^0.1.12"
+  }
+}

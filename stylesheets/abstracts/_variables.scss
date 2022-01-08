@@ -1,0 +1,50 @@
+/// Fonts 'Merriweather-Bold'
+$title-font:  normal 700 3.75rem/7.55rem "Merriweather-Bold";
+$section-title-font:  normal 700 2.5rem/5rem "Merriweather-Bold";
+$section-subtitle-font:  normal 700 1.75rem/3.5rem "Merriweather-Bold";
+
+/// Fonts 'Inter-Regular'
+$text-font:  normal 400 1.125rem/2.25rem "Inter-Regular";
+$button-font:  normal 400 1.25rem/2.5rem "Inter-Regular";
+
+/// Fonts 'Inter-Bold'
+$text-bold-font:  normal 700 1.25rem/2.5rem "Inter-Bold";
+
+
+
+/// Copy text color
+/// @type Color
+$text-color: #ffffff !default;
+
+/// Main brand color
+/// @type Color
+$brand-color: #bdae82 !default;
+
+/// Background color
+/// @type Color
+$bg-color: #000000 !default;
+
+
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1440px !default;
+
+
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'small': 320px,
+  'medium': 768px,
+  'large': 1440px,
+) !default;
+
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;
