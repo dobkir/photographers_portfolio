@@ -4,9 +4,9 @@
     local("Inter-regular"),
     local("Inter Regular"),
     local("InterRegular"),
-    url("../../fonts/Inter-Regular.woff2") format("woff2"),
-    url("../../fonts/Inter-Regular.woff") format("woff"),
-    url("../../fonts/Inter-Regular.ttf") format("ttf");
+    url("../../assets/fonts/Inter-Regular.woff2"),
+    url("../../assets/fonts/Inter-Regular.woff") format("woff"),
+    url("../../assets/fonts/Inter-Regular.ttf") format("ttf");
   font-display: swap;
   font-weight: 400;
   font-style: normal;
@@ -18,9 +18,9 @@
     local("Inter-bold"),
     local("Inter Bold"),
     local("InterBold"),
-    url("../../fonts/Inter-Bold.woff2") format("woff2"),
-    url("../../fonts/Inter-Bold.woff") format("woff"),
-    url("../../fonts/Inter-Bold.ttf") format("ttf");
+    url("../../assets/fonts/Inter-Bold.woff2") format("woff2"),
+    url("../../assets/fonts/Inter-Bold.woff") format("woff"),
+    url("../../assets/fonts/Inter-Bold.ttf") format("ttf");
   font-display: swap;
   font-weight: 400;
   font-style: normal;
@@ -32,9 +32,9 @@
     local("Merriweather-bold"),
     local("Merriweather Bold"),
     local("MerriweatherBold"),
-    url("../../fonts/Merriweather-Bold.woff2") format("woff2"),
-    url("../../fonts/Merriweather-Bold.woff") format("woff"),
-    url("../../fonts/Merriweather-Bold.otf") format("otf");
+    url("../../assets/fonts/Merriweather-Bold.woff2") format("woff2"),
+    url("../../assets/fonts/Merriweather-Bold.woff") format("woff"),
+    url("../../assets/fonts/Merriweather-Bold.otf") format("otf");
   font-display: swap;
   font-weight: 700;
   font-style: normal;
