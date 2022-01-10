@@ -340,6 +340,7 @@ template {
 html {
   box-sizing: border-box;
   font-size: 1em;
+  background-color: #000000;
 }
 
 *,
@@ -357,21 +358,21 @@ a {
 
 @font-face {
   font-family: "Inter-Regular";
-  src: local("Inter-regular"), local("Inter Regular"), local("InterRegular"), url("../../fonts/Inter-Regular.woff2") format("woff2"), url("../../fonts/Inter-Regular.woff") format("woff"), url("../../fonts/Inter-Regular.ttf") format("ttf");
+  src: local("Inter-regular"), local("Inter Regular"), local("InterRegular"), url("../../assets/fonts/Inter-Regular.woff2"), url("../../assets/fonts/Inter-Regular.woff") format("woff"), url("../../assets/fonts/Inter-Regular.ttf") format("ttf");
   font-display: swap;
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter-Bold";
-  src: local("Inter-bold"), local("Inter Bold"), local("InterBold"), url("../../fonts/Inter-Bold.woff2") format("woff2"), url("../../fonts/Inter-Bold.woff") format("woff"), url("../../fonts/Inter-Bold.ttf") format("ttf");
+  src: local("Inter-bold"), local("Inter Bold"), local("InterBold"), url("../../assets/fonts/Inter-Bold.woff2") format("woff2"), url("../../assets/fonts/Inter-Bold.woff") format("woff"), url("../../assets/fonts/Inter-Bold.ttf") format("ttf");
   font-display: swap;
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Merriweather-Bold";
-  src: local("Merriweather-bold"), local("Merriweather Bold"), local("MerriweatherBold"), url("../../fonts/Merriweather-Bold.woff2") format("woff2"), url("../../fonts/Merriweather-Bold.woff") format("woff"), url("../../fonts/Merriweather-Bold.otf") format("otf");
+  src: local("Merriweather-bold"), local("Merriweather Bold"), local("MerriweatherBold"), url("../../assets/fonts/Merriweather-Bold.woff2") format("woff2"), url("../../assets/fonts/Merriweather-Bold.woff") format("woff"), url("../../assets/fonts/Merriweather-Bold.otf") format("otf");
   font-display: swap;
   font-weight: 700;
   font-style: normal;
@@ -380,8 +381,29 @@ a {
  * Basic typography style for copy text
  */
 body {
-  color: #ffffff;
   font: normal 400 1.125rem/2.25rem "Inter-Regular";
+  color: #ffffff;
+}
+
+/**
+ * Main content containers
+ * 1. Make the container full-width with a maximum width
+ * 2. Center it in the viewport
+ * 3. Leave some space on the edges, especially valuable on small screens
+ */
+.container {
+  max-width: 1440px;
+  /* 1 */
+  margin-left: auto;
+  /* 2 */
+  margin-right: auto;
+  /* 2 */
+  padding-left: 20px;
+  /* 3 */
+  padding-right: 20px;
+  /* 3 */
+  width: 100%;
+  /* 1 */
 }
 
 /*# sourceMappingURL=style.css.map */
