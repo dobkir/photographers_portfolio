@@ -1,0 +1,27 @@
+.main {
+  margin: 0 auto;
+
+  background: url(../../../assets/img/hero-main-photo.jpg) 50% 90px no-repeat;
+}
+
+.article__container {
+  margin-top: -90px;
+  border-top: 90px solid transparent;
+}
+
+.hero-about {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 255px auto 330px 60px;
+}
+
+.main-title {
+  margin: 0;
+}
+
+.main__description {
+  max-width: 470px;
+  margin: 0 0 20px 0;
+  padding: 5px 0;
+}

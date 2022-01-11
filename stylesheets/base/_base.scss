@@ -16,4 +16,31 @@ html {
  */
 a {
   text-decoration: none;
+  color: $text-color;
+
+  transition: all .4s linear;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $brand-color;
+  }
+}
+
+/**
+ * Basic styles for lists
+ */
+ul {
+  list-style: none;
+  padding: 0;
+
+  color: $text-color;
+}
+
+/**
+ * Reset margins for figure
+ */
+figure {
+  margin: 0;
+  padding: 0;
 }

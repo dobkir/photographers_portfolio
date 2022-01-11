@@ -1,0 +1,64 @@
+.contacts {
+  width: calc(100% + 40px);
+  height: 700px;
+  margin: 0 -20px;
+  padding-top: 60px;
+  padding-right: 20px;
+
+  background: url(../../../assets/img/hero-additional-photo.jpg) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.form-section {
+  width: 450px;
+  height: 450px;
+  margin-left: auto;
+}
+
+
+.last-section-title {
+  margin: 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 40px;
+
+  &>input,
+  &>textarea {
+    width: 100%;
+    margin-bottom: 18px;
+    padding: 4px 20px;
+
+    font: $button-font;
+    color: $text-color;
+
+    background-color: transparent;
+    border: 2px solid $brand-color;
+    border-radius: none;
+    caret-color: $text-color;
+
+    resize: none;
+    transition: all .4s linear;
+
+    &::placeholder {
+      font: $button-font;
+      color: $brand-color;
+    }
+
+    &:focus {
+      color: $text-color;
+
+      background-color: $brand-color;
+      outline: 1px solid $text-color;
+
+      &::placeholder {
+        color: $bg-color;
+      }
+    }
+  }
+}
+

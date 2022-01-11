@@ -14,3 +14,20 @@
   'base/fonts',
   'base/typography',
   'base/helpers';
+
+// 4. Layout-related sections
+@import
+  'layout/header',
+  'layout/navigation',
+  'layout/main/main',
+  'layout/main/section-title',
+  'layout/main/skills',
+  'layout/main/portfolio',
+  'layout/main/video',
+  'layout/main/price',
+  'layout/main/contacts',
+  'layout/footer';
+
+// 5. Components
+@import
+  'components/button';

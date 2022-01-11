@@ -1,0 +1,16 @@
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skill-item {
+  width: 300px;
+  padding: 0 10px;
+
+  text-align: center;
+}
+
+.skill-description_title {
+  margin: 40px auto 20px;
+}

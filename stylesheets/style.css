@@ -354,25 +354,47 @@ html {
  */
 a {
   text-decoration: none;
+  color: #ffffff;
+  transition: all 0.4s linear;
+}
+a:hover, a:focus, a:active {
+  color: #bdae82;
+}
+
+/**
+ * Basic styles for lists
+ */
+ul {
+  list-style: none;
+  padding: 0;
+  color: #ffffff;
+}
+
+/**
+ * Reset margins for figure
+ */
+figure {
+  margin: 0;
+  padding: 0;
 }
 
 @font-face {
   font-family: "Inter-Regular";
-  src: local("Inter-regular"), local("Inter Regular"), local("InterRegular"), url("../../assets/fonts/Inter-Regular.woff2"), url("../../assets/fonts/Inter-Regular.woff") format("woff"), url("../../assets/fonts/Inter-Regular.ttf") format("ttf");
+  src: local("Inter-regular"), local("Inter Regular"), local("InterRegular"), url("../assets/fonts/Inter-Regular.woff2"), url("../assets/fonts/Inter-Regular.woff") format("woff"), url("../assets/fonts/Inter-Regular.ttf") format("ttf");
   font-display: swap;
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter-Bold";
-  src: local("Inter-bold"), local("Inter Bold"), local("InterBold"), url("../../assets/fonts/Inter-Bold.woff2") format("woff2"), url("../../assets/fonts/Inter-Bold.woff") format("woff"), url("../../assets/fonts/Inter-Bold.ttf") format("ttf");
+  src: local("Inter-bold"), local("Inter Bold"), local("InterBold"), url("../assets/fonts/Inter-Bold.woff2") format("woff2"), url("../assets/fonts/Inter-Bold.woff") format("woff"), url("../assets/fonts/Inter-Bold.ttf") format("ttf");
   font-display: swap;
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Merriweather-Bold";
-  src: local("Merriweather-bold"), local("Merriweather Bold"), local("MerriweatherBold"), url("../../assets/fonts/Merriweather-Bold.woff2") format("woff2"), url("../../assets/fonts/Merriweather-Bold.woff") format("woff"), url("../../assets/fonts/Merriweather-Bold.otf") format("otf");
+  src: local("Merriweather-bold"), local("Merriweather Bold"), local("MerriweatherBold"), url("../assets/fonts/Merriweather-Bold.woff2") format("woff2"), url("../assets/fonts/Merriweather-Bold.woff") format("woff"), url("../assets/fonts/Merriweather-Bold.otf") format("otf");
   font-display: swap;
   font-weight: 700;
   font-style: normal;
@@ -385,6 +407,64 @@ body {
   color: #ffffff;
 }
 
+.nav-list,
+.language-switcher {
+  font: normal 400 1.25rem/3.13rem "Inter-Regular";
+}
+
+.language-switcher {
+  letter-spacing: 1.2px;
+}
+
+.main-title {
+  font: normal 700 3.75rem/7.55rem "Merriweather-Bold";
+}
+
+.main__description {
+  font: normal 400 1.25rem/2.5rem "Inter-Regular";
+}
+
+.button {
+  font: normal 400 1.25rem/2.5rem "Inter-Regular";
+  color: #bdae82;
+}
+.button:hover, .button:focus {
+  color: #ffffff;
+}
+.button:active {
+  color: #000000;
+}
+
+.button_colored {
+  color: #000000;
+}
+
+.section-title,
+.last-section-title {
+  font: normal 700 2.5rem/5rem "Merriweather-Bold";
+  color: #bdae82;
+}
+
+.skill-description_title {
+  font: text-bold-font;
+}
+
+.skill-description_text {
+  font: text-bold-font;
+}
+
+.price-list__card-title {
+  font: normal 700 1.75rem/3.5rem "Merriweather-Bold";
+}
+.price-list__card-price {
+  font: normal 700 1.5rem/3rem "Merriweather-Bold";
+  color: #bdae82;
+}
+
+.footer {
+  font: normal 400 1.25rem/3.13rem "Inter-Regular";
+}
+
 /**
  * Main content containers
  * 1. Make the container full-width with a maximum width
@@ -394,6 +474,8 @@ body {
 .container {
   max-width: 1440px;
   /* 1 */
+  width: 100%;
+  /* 1 */
   margin-left: auto;
   /* 2 */
   margin-right: auto;
@@ -402,8 +484,331 @@ body {
   /* 3 */
   padding-right: 20px;
   /* 3 */
+}
+
+.section {
+  margin-top: -15px;
+  border-top: 15px solid transparent;
+  background-clip: padding-box;
+}
+
+.active-link {
+  color: #bdae82;
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
   width: 100%;
-  /* 1 */
+  height: 90px;
+}
+
+.container-header {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(180deg, #000000 20%, transparent 50%);
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background: url(../../../assets/svg/logo-white.svg) 50% 50% no-repeat;
+}
+.logo:hover, .logo:focus {
+  background: url(../../../assets/svg/logo-gold.svg) 50% 50% no-repeat;
+}
+
+.language-switcher {
+  min-width: 70px;
+}
+
+.nav {
+  width: 100%;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 500px;
+  margin-left: auto;
+  padding: 0 28px;
+}
+
+.main {
+  margin: 0 auto;
+  background: url(../../../assets/img/hero-main-photo.jpg) 50% 90px no-repeat;
+}
+
+.article__container {
+  margin-top: -90px;
+  border-top: 90px solid transparent;
+}
+
+.hero-about {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 255px auto 330px 60px;
+}
+
+.main-title {
+  margin: 0;
+}
+
+.main__description {
+  max-width: 470px;
+  margin: 0 0 20px 0;
+  padding: 5px 0;
+}
+
+.section-title {
+  position: relative;
+  width: 50%;
+  margin: 100px auto 60px;
+  text-align: center;
+}
+.section-title > span {
+  background: #000000;
+  display: inline-block;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 1;
+}
+.section-title::after {
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #bdae82;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skill-item {
+  width: 300px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.skill-description_title {
+  margin: 40px auto 20px;
+}
+
+.portfolio {
+  margin-top: -25px;
+  border-top: 5px solid transparent;
+}
+
+.galleries-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: -5px auto 0;
+}
+
+.portfolio-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 60px auto 0;
+}
+
+.video-presentation {
+  position: relative;
+  width: 100%;
+  height: 36.63003663vw;
+  margin: 0 auto;
+  background: url(../../../assets/img/wedding-videos-poster.jpg) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.play-video-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 130px;
+  height: 130px;
+  margin: auto;
+  background: url(../../../assets/svg/play-button-for-video-player-white.svg) 50% 50% no-repeat;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s linear;
+}
+.play-video-button:hover, .play-video-button:focus {
+  background: url(../../../assets/svg/play-button-for-video-player-gold.svg) 50% 50% no-repeat;
+  transform: scale(0.9);
+}
+
+.price-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  column-gap: 25px;
+  margin-bottom: 100px;
+}
+.price-list__card {
+  width: 450px;
+  height: 505px;
+  text-align: center;
+  border: 3px solid #bdae82;
+}
+.price-list__card-title {
+  margin: 40px auto 0;
+}
+
+.contacts {
+  width: calc(100% + 40px);
+  height: 700px;
+  margin: 0 -20px;
+  padding-top: 60px;
+  padding-right: 20px;
+  background: url(../../../assets/img/hero-additional-photo.jpg) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.form-section {
+  width: 450px;
+  height: 450px;
+  margin-left: auto;
+}
+
+.last-section-title {
+  margin: 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 40px;
+}
+.contact-form > input, .contact-form > textarea {
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 4px 20px;
+  font: normal 400 1.25rem/2.5rem "Inter-Regular";
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid #bdae82;
+  border-radius: none;
+  caret-color: #ffffff;
+  resize: none;
+  transition: all 0.4s linear;
+}
+.contact-form > input::placeholder, .contact-form > textarea::placeholder {
+  font: normal 400 1.25rem/2.5rem "Inter-Regular";
+  color: #bdae82;
+}
+.contact-form > input:focus, .contact-form > textarea:focus {
+  color: #ffffff;
+  background-color: #bdae82;
+  outline: 1px solid #ffffff;
+}
+.contact-form > input:focus::placeholder, .contact-form > textarea:focus::placeholder {
+  color: #000000;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+}
+
+.copyright {
+  display: flex;
+  width: 170px;
+  justify-content: space-between;
+  align-items: center;
+}
+.copyright > small {
+  font: inherit;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 188px;
+}
+
+.social-link {
+  display: block;
+  width: 32px;
+  height: 32px;
+  transition: all 0.4s linear;
+}
+
+.instagram-link {
+  background: url(../../assets/svg/instagram-white.svg) 50% 50% no-repeat;
+}
+.instagram-link:hover, .instagram-link:focus {
+  background: url(../../assets/svg/instagram-gold.svg) 50% 50% no-repeat;
+}
+
+.facebook-link {
+  background: url(../../assets/svg/facebook-white.svg) 50% 50% no-repeat;
+}
+.facebook-link:hover, .facebook-link:focus {
+  background: url(../../assets/svg/facebook-gold.svg) 50% 50% no-repeat;
+}
+
+.twitter-link {
+  background: url(../../assets/svg/twitter-white.svg) 50% 50% no-repeat;
+}
+.twitter-link:hover, .twitter-link:focus {
+  background: url(../../assets/svg/twitter-gold.svg) 50% 50% no-repeat;
+}
+
+.pinterest-link {
+  background: url(../../assets/svg/pinterest-white.svg) 50% 50% no-repeat;
+}
+.pinterest-link:hover, .pinterest-link:focus {
+  background: url(../../assets/svg/pinterest-gold.svg) 50% 50% no-repeat;
+}
+
+.button {
+  width: 220px;
+  height: 55px;
+  background-color: transparent;
+  border: 2px solid #bdae82;
+  cursor: pointer;
+  transition: all 0.4s linear;
+}
+.button:visited {
+  transform: scale(1);
+  box-shadow: none;
+}
+.button:hover, .button:focus {
+  box-shadow: 0.3rem 0.3rem 0.3rem rgba(189, 174, 130, 0.6);
+  transform: scale(0.96);
+}
+.button:active {
+  transform: scale(1);
+}
+.button_colored {
+  background-color: #bdae82;
+}
+.button_price {
+  margin-top: 30px;
+}
+.button_form {
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

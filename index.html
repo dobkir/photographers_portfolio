@@ -26,43 +26,42 @@
 
   <!--============ Header ============-->
 
-  <header class="header container">
+  <header class="header">
+    <div class="container container-header">
 
-    <figure class="logo">
-      <a href="#hero">
-        <img src="assets/svg/logo-white.svg" alt="logo: Portfolio logo" width="50" height="50">
-      </a>
-    </figure>
-    <!-- /.logo -->
+      <a class="logo" href="#main" title="Portfolio logo. Click on it to return to the heading"></a>
 
-    <nav class="nav">
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a href="#skills" class="nav-link">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a href="#portfolio" class="nav-link">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a href="#video" class="nav-link">Video</a>
-        </li>
-        <li class="nav-item">
-          <a href="#price" class="nav-link">Price</a>
-        </li>
-        <li class="nav-item">
-          <a href="#contacts" class="nav-link">Contacts</a>
-        </li>
-      </ul>
-      <!-- /.nav-list -->
-    </nav>
-    <!-- /.nav -->
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#video" class="nav-link">Video</a>
+          </li>
+          <li class="nav-item">
+            <a href="#price" class="nav-link">Price</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contacts" class="nav-link">Contacts</a>
+          </li>
+        </ul>
+        <!-- /.nav-list -->
+      </nav>
+      <!-- /.nav -->
 
-    <p class="language-switcher">
-      <a href="#" class="language-switcher__item">en</a>
-      /
-      <a href="#" class="language-switcher__item">ru</a>
-    </p>
-    <!-- /.language-switcher -->
+      <p class="language-switcher">
+        <a href="#" class="language-switcher__item active-link" title="Switch the page language to English">en</a>
+        /
+        <a href="#" class="language-switcher__item" title="Switch the page language to Russian">ru</a>
+      </p>
+      <!-- /.language-switcher -->
+
+    </div>
+    <!-- /.container -->
 
   </header>
   <!-- /.header -->
@@ -71,71 +70,71 @@
 
   <!--============ Main ============-->
 
-  <main class="main container">
+  <main class="main" id="main">
 
-    <article class="article">
+    <article class="container article__container">
 
 
 
       <!--============ Hero ============-->
 
-
-
-      <h1 class="main-title">Alexa Rise</h1>
-      <p class="main__description">Save sincere emotions, romantic feelings and happy moments of life together with
-        professional photographer Alexa Rise</p>
-      <button class="button button_colored">Hire me</button>
-
-
+      <div class="hero-about">
+        <h1 class="main-title">Alexa Rise</h1>
+        <p class="main__description">Save sincere emotions, romantic feelings and happy moments of life together with
+          professional photographer Alexa Rise</p>
+        <button class="button button_colored button_hire-me" onclick="window.location.href='#contacts'"
+          title="Click to hire me">Hire me</button>
+      </div>
+      <!-- /.hero-about -->
 
       <!--============ Skills ============-->
 
       <section class="skills section" id="skills">
 
-        <h2 class="section-title">Skills</h2>
+        <h2 class="section-title"><span>Skills</span></h2>
         <!-- /.section-title -->
 
         <ul class="skills-list">
 
-          <li class="skills-item">
-            <figure class="skills-item__icon">
+          <li class="skill-item">
+            <figure class="skill-icon">
               <img src="assets/svg/camera-gold.svg" alt="icon: camera" width="62" height="50">
-              <figcaption class="skills-item__description">
-                <h3 class="skills-item__description-title">Digital photography</h3>
-                <p class="skills-item__description-text">High-quality photos in the studio and on the nature</p>
+              <figcaption class="skill-description">
+                <h3 class="skill-description_title">Digital photography</h3>
+                <p class="skill-description_text">High-quality photos in the studio and on the nature</p>
               </figcaption>
             </figure>
           </li>
           <!-- /.skills-item -->
 
-          <li class="skills-item">
-            <figure class="skills-item__icon">
+          <li class="skill-item">
+            <figure class="skill-icon">
               <img src="assets/svg/video-gold.svg" alt="icon: videotape with play button" width="62" height="50">
-              <figcaption class="skills-item__description">
-                <h3 class="skills-item__description-title">Video shooting</h3>
-                <p class="skills-item__description-text">Capture your moments so that they always stay with you</p>
+              <figcaption class="skill-description">
+                <h3 class="skill-description_title">Video shooting</h3>
+                <p class="skill-description_text">Capture your moments so that they always stay with you</p>
               </figcaption>
             </figure>
           </li>
           <!-- /.skills-item -->
 
-          <li class="skills-item">
-            <figure class="skills-item__icon">
+          <li class="skill-item">
+            <figure class="skill-icon">
               <img src="assets/svg/picture-gold.svg" alt="icon: picture" width="62" height="50">
-              <figcaption class="skills-item__description">
-                <h3 class="skills-item__description-title">Retouch</h3>
-                <p class="skills-item__description-text">I strive to make photography surpass reality</p>
+              <figcaption class="skill-description">
+                <h3 class="skill-description_title">Retouch</h3>
+                <p class="skill-description_text">I strive to make photography surpass reality</p>
               </figcaption>
             </figure>
           </li>
           <!-- /.skills-item -->
 
-          <li class="skills-item">
-            <figure class="skills-item__icon">
+          <li class="skill-item">
+            <figure class="skill-icon">
               <img src="assets/svg/microphone-gold.svg" alt="icon: classic microphone" width="62" height="50">
-              <figcaption class="skills-item__description">
-                <h3 class="skills-item__description-title">Audio</h3>
-                <p class="skills-item__description-text">Professional sounds recording for video, advertising, portfolio
+              <figcaption class="skill-description">
+                <h3 class="skill-description_title">Audio</h3>
+                <p class="skill-description_text">Professional sounds recording for video, advertising, portfolio
                 </p>
               </figcaption>
             </figure>
@@ -152,46 +151,46 @@
 
       <section class="portfolio section" id="portfolio">
 
-        <h2 class="section-title">Portfolio</h2>
+        <h2 class="section-title"><span>Portfolio</span></h2>
         <!-- /.section-title -->
 
         <ul class="galleries-list">
 
           <li class="galleries-switcher">
-            <button class="button button_transparent">Winter</button>
+            <button class="button" title="Click to view the gallery of winter photos">Winter</button>
           </li>
 
           <li class="galleries-switcher">
-            <button class="button button_transparent">Spring</button>
+            <button class="button" title="Click to view the gallery of spring photos">Spring</button>
           </li>
 
           <li class="galleries-switcher">
-            <button class="button button_transparent">Summer</button>
+            <button class="button" title="Click to view the gallery of summer photos">Summer</button>
           </li>
 
           <li class="galleries-switcher">
-            <button class="button button_colored">Autumn</button>
+            <button class="button button_colored" title="Click to view the gallery of autumn photos">Autumn</button>
           </li>
 
         </ul>
         <!-- /.galleries-list -->
 
         <figure class="portfolio-gallery">
-          <img src="assets/img/young-lovers.jpg"
+          <img class="gallery-image" src="assets/img/young-lovers.jpg"
             alt="photo: Young lovers kiss standing by a tree among the autumn foliage" width="450" height="560">
-          <img src="assets/img/horse-in-the-forest.jpg"
+          <img class="gallery-image" src="assets/img/horse-in-the-forest.jpg"
             alt="photo: A horse in a clearing in the autumn forest at dawn. The sun is among the branches of a tree"
             width="450" height="560">
-          <img src="assets/img/child-playing-in-the-grass.jpg"
+          <img class="gallery-image" src="assets/img/child-playing-in-the-grass.jpg"
             alt="photo: A little child in a hat and mittens sits in the grass and digs the ground with a spoon"
             width="450" height="560">
-          <img src="assets/img/two-big-old-woods.jpg"
+          <img class="gallery-image" src="assets/img/two-big-old-woods.jpg"
             alt="photo: Two big old trees with spreading branches in the fog on the bumpy ground covered with green moss and fallen autumn leaves"
             width="450" height="560">
-          <img src="assets/img/old-lovers.jpg"
+          <img class="gallery-image" src="assets/img/old-lovers.jpg"
             alt="photo: Laughing faces of two elderly lovers who are lying on the autumn foliage, embracing each other"
             width="450" height="560">
-          <img src="assets/img/photographing-autumn-leaves.jpg"
+          <img class="gallery-image" src="assets/img/photographing-autumn-leaves.jpg"
             alt="photo: A woman in a sweater and a scarf hold several colorful autumn leaves in her hand and takes pictures of them on her phone"
             width="450" height="560">
         </figure>
@@ -204,10 +203,10 @@
 
       <section class="video section" id="video">
 
-        <h2 class="section-title">Video</h2>
+        <h2 class="section-title"><span>Video</span></h2>
 
         <figure class="video-presentation">
-          <button class="play-video-button"></button>
+          <button class="play-video-button" title="press to play video"></button>
         </figure>
         <!-- /.video-presentation -->
 
@@ -218,7 +217,7 @@
 
       <section class="price section" id="price">
 
-        <h2 class="section-title">Price</h2>
+        <h2 class="section-title"><span>Price</span></h2>
 
         <ul class="price-list">
 
@@ -232,7 +231,7 @@
               <li class="service-list__item">Readiness 2-3 weeks</li>
               <li class="service-list__item">Make up, visage</li>
             </ul>
-            <button class="button button_colored">Order shooting</button>
+            <button class="button button_colored button_price" title="Click to order shooting">Order shooting</button>
           </li>
           <!-- /.price-list__card -->
 
@@ -246,7 +245,7 @@
               <li class="service-list__item">Readiness 1-2 weeks</li>
               <li class="service-list__item">Make up, visage</li>
             </ul>
-            <button class="button button_colored">Order shooting</button>
+            <button class="button button_colored button_price" title="Click to order shooting">Order shooting</button>
           </li>
           <!-- /.price-list__card -->
 
@@ -260,7 +259,7 @@
               <li class="service-list__item">Readiness 1 week</li>
               <li class="service-list__item">Make up, visage, hairstyle</li>
             </ul>
-            <button class="button button_colored">Order shooting</button>
+            <button class="button button_colored button_price" title="Click to order shooting">Order shooting</button>
           </li>
           <!-- /.price-list__card -->
 
@@ -272,17 +271,25 @@
 
       <!--============ Contacts ============-->
 
-      <section class="contacts section" id="contacts">
+      <section class="contacts" id="contacts">
 
-        <h2 class="section-title">Contact me</h2>
+        <div class="form-section">
 
-        <form class="contact-form" action="#" method="POST">
-          <input type="email" name="email" placeholder="E-mail">
-          <input type="tel" name="tel" placeholder="Phone" pattern="+[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
-          <textarea name="comment" placeholder="Message" cols="40" rows="3"></textarea>
-          <button type="submit" class="button button_colored">Send message</button>
-        </form>
-        <!-- /.contact-form -->
+          <h2 class="last-section-title">Contact me</h2>
+
+          <form class="contact-form" name="contact-form" action="#" method="POST">
+            <input type="email" name="email" placeholder="E-mail" title="Enter your e-mail here" required>
+            <input type="tel" name="tel" placeholder="Phone" title="Enter your phone number here"
+              pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" required>
+            <textarea name="comment" placeholder="Message" title="Enter your message here" required></textarea>
+            <button class="button button_colored button_form" type="submit" name="submit-btn"
+              title="Press to send your message">Send
+              message</button>
+          </form>
+          <!-- /.contact-form -->
+
+        </div>
+        <!-- /.form-section -->
 
       </section>
       <!-- /.contacts section -->
@@ -301,7 +308,8 @@
 
   <footer class="footer container">
     <p class="copyright">
-      <small>&copy; 2021</small>
+      <small>&copy;</small>
+      <small>2021</small>
       <a href="https://github.com/dobkir" target="_blank">github</a>
     </p>
     <p>

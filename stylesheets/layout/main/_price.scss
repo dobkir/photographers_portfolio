@@ -1,0 +1,20 @@
+.price-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  column-gap: 25px;
+  margin-bottom: 100px;
+
+  &__card {
+    width: 450px;
+    height: 505px;
+
+    text-align: center;
+
+    border: 3px solid $brand-color;
+
+    &-title {
+      margin: 40px auto 0;
+    }
+  }
+}

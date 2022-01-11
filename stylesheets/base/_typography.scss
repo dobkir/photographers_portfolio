@@ -5,3 +5,68 @@ body {
   font: $text-font;
   color: $text-color;
 }
+
+.nav-list,
+.language-switcher {
+  font: $navigation-font;
+}
+
+.language-switcher {
+  letter-spacing: 1.2px;
+}
+
+.main-title {
+  font: $title-font;
+}
+
+.main__description {
+  font: $button-font;
+}
+
+.button {
+  font: $button-font;
+  color: $brand-color;
+
+  &:hover,
+  &:focus {
+    color: $text-color;
+  }
+
+  &:active {
+    color: $bg-color;
+  }
+}
+
+.button_colored {
+  color: $bg-color;
+}
+
+.section-title,
+.last-section-title {
+  font: $section-title-font;
+  color: $brand-color;
+}
+
+.skill-description_title {
+  font: text-bold-font;
+}
+
+.skill-description_text {
+  font: text-bold-font;
+}
+
+.price-list {
+
+  &__card-title {
+    font: $section-subtitle-font;
+  }
+
+  &__card-price {
+    font: $price-font;
+    color: $brand-color;
+  }
+}
+
+.footer {
+  font: $navigation-font;
+}
