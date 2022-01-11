@@ -514,10 +514,10 @@ body {
 .logo {
   width: 50px;
   height: 50px;
-  background: url(../../../assets/svg/logo-white.svg) 50% 50% no-repeat;
+  background: url(../assets/svg/logo-white.svg) 50% 50% no-repeat;
 }
 .logo:hover, .logo:focus {
-  background: url(../../../assets/svg/logo-gold.svg) 50% 50% no-repeat;
+  background: url(../assets/svg/logo-gold.svg) 50% 50% no-repeat;
 }
 
 .language-switcher {
@@ -539,7 +539,7 @@ body {
 
 .main {
   margin: 0 auto;
-  background: url(../../../assets/img/hero-main-photo.jpg) 50% 90px no-repeat;
+  background: url(../assets/img/hero-main-photo.jpg) 50% 90px no-repeat;
 }
 
 .article__container {
@@ -630,7 +630,7 @@ body {
   width: 100%;
   height: 36.63003663vw;
   margin: 0 auto;
-  background: url(../../../assets/img/wedding-videos-poster.jpg) 50% 50% no-repeat;
+  background: url(../assets/img/wedding-videos-poster.jpg) 50% 50% no-repeat;
   background-size: cover;
 }
 
@@ -643,13 +643,13 @@ body {
   width: 130px;
   height: 130px;
   margin: auto;
-  background: url(../../../assets/svg/play-button-for-video-player-white.svg) 50% 50% no-repeat;
+  background: url(../assets/svg/play-button-for-video-player-white.svg) 50% 50% no-repeat;
   border: none;
   cursor: pointer;
   transition: all 0.4s linear;
 }
 .play-video-button:hover, .play-video-button:focus {
-  background: url(../../../assets/svg/play-button-for-video-player-gold.svg) 50% 50% no-repeat;
+  background: url(../assets/svg/play-button-for-video-player-gold.svg) 50% 50% no-repeat;
   transform: scale(0.9);
 }
 
@@ -676,7 +676,7 @@ body {
   margin: 0 -20px;
   padding-top: 60px;
   padding-right: 20px;
-  background: url(../../../assets/img/hero-additional-photo.jpg) 0 0 no-repeat;
+  background: url(../assets/img/hero-additional-photo.jpg) 0 0 no-repeat;
   background-size: cover;
 }
 
@@ -755,31 +755,31 @@ body {
 }
 
 .instagram-link {
-  background: url(../../assets/svg/instagram-white.svg) 50% 50% no-repeat;
+  background: url(../assets/svg/instagram-white.svg) 50% 50% no-repeat;
 }
 .instagram-link:hover, .instagram-link:focus {
-  background: url(../../assets/svg/instagram-gold.svg) 50% 50% no-repeat;
+  background: url(../assets/svg/instagram-gold.svg) 50% 50% no-repeat;
 }
 
 .facebook-link {
-  background: url(../../assets/svg/facebook-white.svg) 50% 50% no-repeat;
+  background: url(../assets/svg/facebook-white.svg) 50% 50% no-repeat;
 }
 .facebook-link:hover, .facebook-link:focus {
-  background: url(../../assets/svg/facebook-gold.svg) 50% 50% no-repeat;
+  background: url(../assets/svg/facebook-gold.svg) 50% 50% no-repeat;
 }
 
 .twitter-link {
-  background: url(../../assets/svg/twitter-white.svg) 50% 50% no-repeat;
+  background: url(../assets/svg/twitter-white.svg) 50% 50% no-repeat;
 }
 .twitter-link:hover, .twitter-link:focus {
-  background: url(../../assets/svg/twitter-gold.svg) 50% 50% no-repeat;
+  background: url(../assets/svg/twitter-gold.svg) 50% 50% no-repeat;
 }
 
 .pinterest-link {
-  background: url(../../assets/svg/pinterest-white.svg) 50% 50% no-repeat;
+  background: url(../assets/svg/pinterest-white.svg) 50% 50% no-repeat;
 }
 .pinterest-link:hover, .pinterest-link:focus {
-  background: url(../../assets/svg/pinterest-gold.svg) 50% 50% no-repeat;
+  background: url(../assets/svg/pinterest-gold.svg) 50% 50% no-repeat;
 }
 
 .button {

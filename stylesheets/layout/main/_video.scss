@@ -5,7 +5,7 @@
   height: calc(100vw / 2.73);
   margin: 0 auto;
 
-  background: url(../../../assets/img/wedding-videos-poster.jpg) 50% 50% no-repeat;
+  background: url(../assets/img/wedding-videos-poster.jpg) 50% 50% no-repeat;
   background-size: cover;
 }
 
@@ -20,7 +20,7 @@
   height: 130px;
   margin: auto;
 
-  background: url(../../../assets/svg/play-button-for-video-player-white.svg) 50% 50% no-repeat;
+  background: url(../assets/svg/play-button-for-video-player-white.svg) 50% 50% no-repeat;
   border: none;
   cursor: pointer;
 
@@ -28,7 +28,7 @@
 
   &:hover,
   &:focus {
-    background: url(../../../assets/svg/play-button-for-video-player-gold.svg) 50% 50% no-repeat;
+    background: url(../assets/svg/play-button-for-video-player-gold.svg) 50% 50% no-repeat;
     transform: scale(.9);
   }
 }
