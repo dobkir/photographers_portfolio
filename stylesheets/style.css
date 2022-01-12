@@ -355,7 +355,7 @@ html {
 a {
   text-decoration: none;
   color: #ffffff;
-  transition: all 0.4s linear;
+  transition: color 0.6s ease-in;
 }
 a:hover, a:focus, a:active {
   color: #bdae82;
@@ -515,6 +515,7 @@ body {
   width: 50px;
   height: 50px;
   background: url(../assets/svg/logo-white.svg) 50% 50% no-repeat;
+  transition: background-image 0.6s ease-in;
 }
 .logo:hover, .logo:focus {
   background: url(../assets/svg/logo-gold.svg) 50% 50% no-repeat;
@@ -646,7 +647,7 @@ body {
   background: url(../assets/svg/play-button-for-video-player-white.svg) 50% 50% no-repeat;
   border: none;
   cursor: pointer;
-  transition: all 0.4s linear;
+  transition: all 0.8s ease-in-out;
 }
 .play-video-button:hover, .play-video-button:focus {
   background: url(../assets/svg/play-button-for-video-player-gold.svg) 50% 50% no-repeat;
@@ -751,7 +752,7 @@ body {
   display: block;
   width: 32px;
   height: 32px;
-  transition: all 0.4s linear;
+  transition: background-image 0.6s ease-in;
 }
 
 .instagram-link {

@@ -18,7 +18,7 @@ a {
   text-decoration: none;
   color: $text-color;
 
-  transition: all .4s linear;
+  transition: color 0.6s ease-in;
 
   &:hover,
   &:focus,
