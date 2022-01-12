@@ -355,7 +355,7 @@ html {
 a {
   text-decoration: none;
   color: #ffffff;
-  transition: color 0.6s ease-in;
+  transition: color 0.4s ease-in;
 }
 a:hover, a:focus, a:active {
   color: #bdae82;
@@ -515,10 +515,11 @@ body {
   width: 50px;
   height: 50px;
   background: url(../assets/svg/logo-white.svg) 50% 50% no-repeat;
-  transition: background-image 0.6s ease-in;
+  transition: all 0.8s ease-in;
 }
 .logo:hover, .logo:focus {
   background: url(../assets/svg/logo-gold.svg) 50% 50% no-repeat;
+  transform: translateZ(0);
 }
 
 .language-switcher {
@@ -647,11 +648,11 @@ body {
   background: url(../assets/svg/play-button-for-video-player-white.svg) 50% 50% no-repeat;
   border: none;
   cursor: pointer;
-  transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in;
 }
 .play-video-button:hover, .play-video-button:focus {
   background: url(../assets/svg/play-button-for-video-player-gold.svg) 50% 50% no-repeat;
-  transform: scale(0.9);
+  transform: translateZ(0) scale(0.9);
 }
 
 .price-list {
@@ -752,7 +753,17 @@ body {
   display: block;
   width: 32px;
   height: 32px;
-  transition: background-image 0.6s ease-in;
+  transition: all 0.8s ease-in;
+}
+
+.instagram-link:hover, .instagram-link:focus,
+.facebook-link:hover,
+.facebook-link:focus,
+.twitter-link:hover,
+.twitter-link:focus,
+.pinterest-link:hover,
+.pinterest-link:focus {
+  transform: translateZ(0);
 }
 
 .instagram-link {

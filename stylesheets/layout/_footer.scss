@@ -28,7 +28,17 @@
   width: 32px;
   height: 32px;
 
-  transition: background-image 0.6s ease-in;
+  transition: all 0.8s ease-in;
+}
+
+.instagram-link,
+.facebook-link,
+.twitter-link,
+.pinterest-link {
+  &:hover,
+  &:focus {
+    transform: translateZ(0);
+  }
 }
 
 .instagram-link {

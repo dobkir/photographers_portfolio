@@ -24,11 +24,11 @@
   border: none;
   cursor: pointer;
 
-  transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in;
 
   &:hover,
   &:focus {
     background: url(../assets/svg/play-button-for-video-player-gold.svg) 50% 50% no-repeat;
-    transform: scale(.9);
+    transform: translateZ(0) scale(.9);
   }
 }
