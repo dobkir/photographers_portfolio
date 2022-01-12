@@ -28,51 +28,33 @@
   width: 32px;
   height: 32px;
 
-  transition: all 0.8s ease-in;
-}
+  background-color: $text-color;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  transition: background-color 0.6s ease-in;
 
-.instagram-link,
-.facebook-link,
-.twitter-link,
-.pinterest-link {
   &:hover,
   &:focus {
-    transform: translateZ(0);
+    background-color: $brand-color;
   }
 }
 
 .instagram-link {
-  background: url(../assets/svg/instagram-white.svg) 50% 50% no-repeat;
-
-  &:hover,
-  &:focus {
-    background: url(../assets/svg/instagram-gold.svg) 50% 50% no-repeat;
-  }
+  -webkit-mask-image: url("../assets/svg/instagram-white.svg");
+  mask-image: url("../assets/svg/instagram-white.svg");
 }
 
 .facebook-link {
-  background: url(../assets/svg/facebook-white.svg) 50% 50% no-repeat;
-
-  &:hover,
-  &:focus {
-    background: url(../assets/svg/facebook-gold.svg) 50% 50% no-repeat;
-  }
+  -webkit-mask-image: url("../assets/svg/facebook-white.svg");
+  mask-image: url("../assets/svg/facebook-white.svg");
 }
 
 .twitter-link {
-  background: url(../assets/svg/twitter-white.svg) 50% 50% no-repeat;
-
-  &:hover,
-  &:focus {
-    background: url(../assets/svg/twitter-gold.svg) 50% 50% no-repeat;
-  }
+  -webkit-mask-image: url("../assets/svg/twitter-white.svg");
+  mask-image: url("../assets/svg/twitter-white.svg");
 }
 
 .pinterest-link {
-  background: url(../assets/svg/pinterest-white.svg) 50% 50% no-repeat;
-
-  &:hover,
-  &:focus {
-    background: url(../assets/svg/pinterest-gold.svg) 50% 50% no-repeat;
-  }
+  -webkit-mask-image: url("../assets/svg/pinterest-white.svg");
+  mask-image: url("../assets/svg/pinterest-white.svg");
 }

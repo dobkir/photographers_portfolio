@@ -20,15 +20,19 @@
   height: 130px;
   margin: auto;
 
-  background: url(../assets/svg/play-button-for-video-player-white.svg) 50% 50% no-repeat;
+  background-color: $text-color;
+  -webkit-mask-image: url("../assets/svg/play-button-for-video-player-white.svg");
+  mask-image: url("../assets/svg/play-button-for-video-player-white.svg");
+  -webkit-mask-size: cover;
+  mask-size: cover;
   border: none;
   cursor: pointer;
 
-  transition: all 0.8s ease-in;
+  transition: all 0.6s ease-in;
 
   &:hover,
   &:focus {
-    background: url(../assets/svg/play-button-for-video-player-gold.svg) 50% 50% no-repeat;
+    background-color: $brand-color;
     transform: translateZ(0) scale(.9);
   }
 }

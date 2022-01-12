@@ -355,7 +355,7 @@ html {
 a {
   text-decoration: none;
   color: #ffffff;
-  transition: color 0.4s ease-in;
+  transition: color 0.6s ease-in;
 }
 a:hover, a:focus, a:active {
   color: #bdae82;
@@ -512,14 +512,17 @@ body {
 }
 
 .logo {
-  width: 50px;
+  width: 55px;
   height: 50px;
-  background: url(../assets/svg/logo-white.svg) 50% 50% no-repeat;
-  transition: all 0.8s ease-in;
+  background-color: #ffffff;
+  -webkit-mask-image: url("../assets/svg/logo-white.svg");
+  mask-image: url("../assets/svg/logo-white.svg");
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  transition: background-color 0.6s ease-in;
 }
 .logo:hover, .logo:focus {
-  background: url(../assets/svg/logo-gold.svg) 50% 50% no-repeat;
-  transform: translateZ(0);
+  background-color: #bdae82;
 }
 
 .language-switcher {
@@ -645,13 +648,17 @@ body {
   width: 130px;
   height: 130px;
   margin: auto;
-  background: url(../assets/svg/play-button-for-video-player-white.svg) 50% 50% no-repeat;
+  background-color: #ffffff;
+  -webkit-mask-image: url("../assets/svg/play-button-for-video-player-white.svg");
+  mask-image: url("../assets/svg/play-button-for-video-player-white.svg");
+  -webkit-mask-size: cover;
+  mask-size: cover;
   border: none;
   cursor: pointer;
-  transition: all 0.8s ease-in;
+  transition: all 0.6s ease-in;
 }
 .play-video-button:hover, .play-video-button:focus {
-  background: url(../assets/svg/play-button-for-video-player-gold.svg) 50% 50% no-repeat;
+  background-color: #bdae82;
   transform: translateZ(0) scale(0.9);
 }
 
@@ -753,45 +760,33 @@ body {
   display: block;
   width: 32px;
   height: 32px;
-  transition: all 0.8s ease-in;
+  background-color: #ffffff;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  transition: background-color 0.6s ease-in;
 }
-
-.instagram-link:hover, .instagram-link:focus,
-.facebook-link:hover,
-.facebook-link:focus,
-.twitter-link:hover,
-.twitter-link:focus,
-.pinterest-link:hover,
-.pinterest-link:focus {
-  transform: translateZ(0);
+.social-link:hover, .social-link:focus {
+  background-color: #bdae82;
 }
 
 .instagram-link {
-  background: url(../assets/svg/instagram-white.svg) 50% 50% no-repeat;
-}
-.instagram-link:hover, .instagram-link:focus {
-  background: url(../assets/svg/instagram-gold.svg) 50% 50% no-repeat;
+  -webkit-mask-image: url("../assets/svg/instagram-white.svg");
+  mask-image: url("../assets/svg/instagram-white.svg");
 }
 
 .facebook-link {
-  background: url(../assets/svg/facebook-white.svg) 50% 50% no-repeat;
-}
-.facebook-link:hover, .facebook-link:focus {
-  background: url(../assets/svg/facebook-gold.svg) 50% 50% no-repeat;
+  -webkit-mask-image: url("../assets/svg/facebook-white.svg");
+  mask-image: url("../assets/svg/facebook-white.svg");
 }
 
 .twitter-link {
-  background: url(../assets/svg/twitter-white.svg) 50% 50% no-repeat;
-}
-.twitter-link:hover, .twitter-link:focus {
-  background: url(../assets/svg/twitter-gold.svg) 50% 50% no-repeat;
+  -webkit-mask-image: url("../assets/svg/twitter-white.svg");
+  mask-image: url("../assets/svg/twitter-white.svg");
 }
 
 .pinterest-link {
-  background: url(../assets/svg/pinterest-white.svg) 50% 50% no-repeat;
-}
-.pinterest-link:hover, .pinterest-link:focus {
-  background: url(../assets/svg/pinterest-gold.svg) 50% 50% no-repeat;
+  -webkit-mask-image: url("../assets/svg/pinterest-white.svg");
+  mask-image: url("../assets/svg/pinterest-white.svg");
 }
 
 .button {
