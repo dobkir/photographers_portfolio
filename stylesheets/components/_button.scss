@@ -1,12 +1,12 @@
 .button {
-  width: 220px;
-  height: 55px;
+  width: 13.75rem;
+  height: 3.44rem;
 
   background-color: transparent;
   border: 2px solid $brand-color;
   cursor: pointer;
 
-  transition: all 0.4s linear;
+  @extend %transition;
 
   &:visited {
     transform: scale(1);
@@ -15,7 +15,7 @@
 
   &:hover,
   &:focus {
-    box-shadow: .3rem .3rem .3rem rgba(189, 174, 130, .6);
+    box-shadow: 0.3rem 0.3rem 0.3rem rgba($brand-color, 0.6);
     transform: scale(.96);
   }
 
@@ -27,12 +27,8 @@
     background-color: $brand-color;
   }
 
-  &_price {
-    margin-top: 30px;
-  }
-
   &_form {
-    margin-top: 20px;
+    margin-top: 1.25rem;
   }
 }
 

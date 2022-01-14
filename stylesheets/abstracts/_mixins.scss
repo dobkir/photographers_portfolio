@@ -1,0 +1,17 @@
+@mixin mask(
+  $image-url,
+  $mask-size: cover,
+  $bg-color: $text-color,
+  $hover-color: $brand-color
+  ) {
+  background-color: $bg-color;
+  -webkit-mask-image: url("#{$image-url}");
+  mask-image: url("#{$image-url}");
+  -webkit-mask-size: $mask-size;
+  mask-size: $mask-size;
+
+  &:hover,
+  &:focus {
+    background-color: $hover-color;
+  }
+}

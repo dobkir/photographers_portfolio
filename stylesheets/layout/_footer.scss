@@ -1,15 +1,11 @@
 .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @extend %flex-centered-items-space-btw;
   height: 150px;
 }
 
 .copyright {
-  display: flex;
+  @extend %flex-centered-items-space-btw;
   width: 170px;
-  justify-content: space-between;
-  align-items: center;
 
   >small {
     font: inherit;
@@ -17,9 +13,7 @@
 }
 
 .social-links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @extend %flex-centered-items-space-btw;
   width: 188px;
 }
 
@@ -28,33 +22,21 @@
   width: 32px;
   height: 32px;
 
-  background-color: $text-color;
-  -webkit-mask-size: cover;
-  mask-size: cover;
-  transition: background-color 0.6s ease-in;
-
-  &:hover,
-  &:focus {
-    background-color: $brand-color;
-  }
+  @extend %transition;
 }
 
 .instagram-link {
-  -webkit-mask-image: url("../assets/svg/instagram-white.svg");
-  mask-image: url("../assets/svg/instagram-white.svg");
+  @include mask("../assets/svg/instagram-white.svg");
 }
 
 .facebook-link {
-  -webkit-mask-image: url("../assets/svg/facebook-white.svg");
-  mask-image: url("../assets/svg/facebook-white.svg");
+  @include mask("../assets/svg/facebook-white.svg");
 }
 
 .twitter-link {
-  -webkit-mask-image: url("../assets/svg/twitter-white.svg");
-  mask-image: url("../assets/svg/twitter-white.svg");
+  @include mask("../assets/svg/twitter-white.svg");
 }
 
 .pinterest-link {
-  -webkit-mask-image: url("../assets/svg/pinterest-white.svg");
-  mask-image: url("../assets/svg/pinterest-white.svg");
+  @include mask("../assets/svg/pinterest-white.svg");
 }

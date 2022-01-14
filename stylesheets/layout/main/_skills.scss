@@ -1,16 +1,21 @@
 .skills-list {
-  display: flex;
+  @extend %flex-centered-items-space-btw;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 0.63rem;
 }
 
 .skill-item {
-  width: 300px;
-  padding: 0 10px;
+  width: 18.75rem;
+  padding: 0 0.63rem;
 
   text-align: center;
 }
 
 .skill-description_title {
-  margin: 40px auto 20px;
+  margin: 2.38rem auto 1.38rem;
+}
+
+.skill-description_text {
+  margin-bottom: 0.31rem;
 }

@@ -1,21 +1,13 @@
-.portfolio {
-    margin-top: -25px;
-    border-top: 5px solid transparent;
-}
-
 .galleries-list {
-  display: flex;
-  justify-content: center;
+  @extend %flex-centered-justify;
   flex-wrap: wrap;
-  gap: 5px;
-  margin: -5px auto 0;
+  gap: 0.31rem;
 }
 
 .portfolio-gallery {
-  display: flex;
-  justify-content: center;
+  @extend %flex-centered-justify;
   flex-wrap: wrap;
-  gap: 25px;
-  margin: 60px auto 0;
+  gap: 1.56rem;
+  margin: 3.75rem auto 0;
 }
 

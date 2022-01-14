@@ -1,17 +1,17 @@
 .contacts {
-  width: calc(100% + 40px);
-  height: 700px;
-  margin: 0 -20px;
-  padding-top: 60px;
-  padding-right: 20px;
+  width: calc(100% + 2.5rem);
+  height: 43.75rem;
+  margin: 0 -1.25rem;
+  padding-top: 3.75rem;
+  padding-right: 1.25rem;
 
-  background: url(../assets/img/hero-additional-photo.jpg) 0 0 no-repeat;
-  background-size: cover;
+  background: url(../assets/img/hero-additional-photo.jpg) 50% 50% no-repeat;
+  background-size: auto 700px;
 }
 
 .form-section {
-  width: 450px;
-  height: 450px;
+  width: 28.12rem;
+  height: 28.12rem;
   margin-left: auto;
 }
 
@@ -25,13 +25,13 @@
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 2.5rem;
 
   &>input,
   &>textarea {
     width: 100%;
-    margin-bottom: 18px;
-    padding: 4px 20px;
+    margin-bottom: 1.15rem;
+    padding: 0.23rem 1.25rem;
 
     font: $button-font;
     color: $text-color;
@@ -42,7 +42,7 @@
     caret-color: $text-color;
 
     resize: none;
-    transition: all .4s linear;
+    @extend %transition;
 
     &::placeholder {
       font: $button-font;
@@ -52,11 +52,12 @@
     &:focus {
       color: $text-color;
 
-      background-color: $brand-color;
+      // background-color: $brand-color;
       outline: 1px solid $text-color;
+      box-shadow: 0.4rem 0.4rem 0.5rem rgba($brand-color, 0.6);
 
       &::placeholder {
-        color: $bg-color;
+        color: $text-color;
       }
     }
   }

@@ -1,20 +1,28 @@
 .price-list {
-  display: flex;
+  @extend %flex-centered-justify;
   flex-wrap: wrap;
-  row-gap: 50px;
-  column-gap: 25px;
-  margin-bottom: 100px;
+  row-gap: 3.12rem;
+  column-gap: 1.56rem;
+  margin-bottom: 6.25rem;
 
   &__card {
-    width: 450px;
-    height: 505px;
+    width: 28.12rem;
+    height: 31.56rem;
 
     text-align: center;
 
     border: 3px solid $brand-color;
 
     &-title {
-      margin: 40px auto 0;
+      margin: 2.6rem auto 0;
     }
   }
+}
+
+.price-list__card-price {
+  margin: 1.25rem auto;
+}
+
+.service-list {
+  margin-bottom: 2.4rem;
 }

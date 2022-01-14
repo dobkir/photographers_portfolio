@@ -1,3 +1,23 @@
+.button, .social-link, .contact-form > input, .contact-form > textarea, .play-video-button, .logo, a {
+  transition: all 0.4s ease-in-out;
+}
+
+.container-header {
+  display: flex;
+  align-items: center;
+}
+
+.social-links, .copyright, .footer, .skills-list, .nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-list, .portfolio-gallery, .galleries-list {
+  display: flex;
+  justify-content: center;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -355,7 +375,6 @@ html {
 a {
   text-decoration: none;
   color: #ffffff;
-  transition: color 0.6s ease-in;
 }
 a:hover, a:focus, a:active {
   color: #bdae82;
@@ -446,11 +465,7 @@ body {
 }
 
 .skill-description_title {
-  font: text-bold-font;
-}
-
-.skill-description_text {
-  font: text-bold-font;
+  font: normal 700 1.25rem/2.5rem "Inter-Bold";
 }
 
 .price-list__card-title {
@@ -487,8 +502,7 @@ body {
 }
 
 .section {
-  margin-top: -15px;
-  border-top: 15px solid transparent;
+  border-top: 1px solid transparent;
   background-clip: padding-box;
 }
 
@@ -500,14 +514,12 @@ body {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 10;
+  z-index: 1;
   width: 100%;
   height: 90px;
 }
 
 .container-header {
-  display: flex;
-  align-items: center;
   background: linear-gradient(180deg, #000000 20%, transparent 50%);
 }
 
@@ -519,7 +531,6 @@ body {
   mask-image: url("../assets/svg/logo-white.svg");
   -webkit-mask-size: cover;
   mask-size: cover;
-  transition: background-color 0.6s ease-in;
 }
 .logo:hover, .logo:focus {
   background-color: #bdae82;
@@ -534,9 +545,6 @@ body {
 }
 
 .nav-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   max-width: 500px;
   margin-left: auto;
   padding: 0 28px;
@@ -544,19 +552,19 @@ body {
 
 .main {
   margin: 0 auto;
-  background: url(../assets/img/hero-main-photo.jpg) 50% 90px no-repeat;
+  background: url(../assets/img/hero-main-photo.jpg) 50% 5.63rem no-repeat;
 }
 
 .article__container {
-  margin-top: -90px;
-  border-top: 90px solid transparent;
+  margin-top: -5.63rem;
+  border-top: 5.63rem solid transparent;
 }
 
 .hero-about {
   display: inline-flex;
   flex-direction: column;
   align-items: start;
-  margin: 255px auto 330px 60px;
+  margin: 15.94rem auto 20.63rem 3.75rem;
 }
 
 .main-title {
@@ -564,15 +572,15 @@ body {
 }
 
 .main__description {
-  max-width: 470px;
-  margin: 0 0 20px 0;
-  padding: 5px 0;
+  max-width: 29.38rem;
+  margin: 0 0 1.25rem 0;
+  padding: 0.31rem 0;
 }
 
 .section-title {
   position: relative;
   width: 50%;
-  margin: 100px auto 60px;
+  margin: 6.25rem auto 3.75rem;
   text-align: center;
 }
 .section-title > span {
@@ -594,40 +602,34 @@ body {
 }
 
 .skills-list {
-  display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 0.63rem;
 }
 
 .skill-item {
-  width: 300px;
-  padding: 0 10px;
+  width: 18.75rem;
+  padding: 0 0.63rem;
   text-align: center;
 }
 
 .skill-description_title {
-  margin: 40px auto 20px;
+  margin: 2.38rem auto 1.38rem;
 }
 
-.portfolio {
-  margin-top: -25px;
-  border-top: 5px solid transparent;
+.skill-description_text {
+  margin-bottom: 0.31rem;
 }
 
 .galleries-list {
-  display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 5px;
-  margin: -5px auto 0;
+  gap: 0.31rem;
 }
 
 .portfolio-gallery {
-  display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 25px;
-  margin: 60px auto 0;
+  gap: 1.56rem;
+  margin: 3.75rem auto 0;
 }
 
 .video-presentation {
@@ -655,43 +657,51 @@ body {
   mask-size: cover;
   border: none;
   cursor: pointer;
-  transition: all 0.6s ease-in;
 }
 .play-video-button:hover, .play-video-button:focus {
   background-color: #bdae82;
+}
+.play-video-button:hover, .play-video-button:focus {
   transform: translateZ(0) scale(0.9);
 }
 
 .price-list {
-  display: flex;
   flex-wrap: wrap;
-  row-gap: 50px;
-  column-gap: 25px;
-  margin-bottom: 100px;
+  row-gap: 3.12rem;
+  column-gap: 1.56rem;
+  margin-bottom: 6.25rem;
 }
 .price-list__card {
-  width: 450px;
-  height: 505px;
+  width: 28.12rem;
+  height: 31.56rem;
   text-align: center;
   border: 3px solid #bdae82;
 }
 .price-list__card-title {
-  margin: 40px auto 0;
+  margin: 2.6rem auto 0;
+}
+
+.price-list__card-price {
+  margin: 1.25rem auto;
+}
+
+.service-list {
+  margin-bottom: 2.4rem;
 }
 
 .contacts {
-  width: calc(100% + 40px);
-  height: 700px;
-  margin: 0 -20px;
-  padding-top: 60px;
-  padding-right: 20px;
-  background: url(../assets/img/hero-additional-photo.jpg) 0 0 no-repeat;
-  background-size: cover;
+  width: calc(100% + 2.5rem);
+  height: 43.75rem;
+  margin: 0 -1.25rem;
+  padding-top: 3.75rem;
+  padding-right: 1.25rem;
+  background: url(../assets/img/hero-additional-photo.jpg) 50% 50% no-repeat;
+  background-size: auto 700px;
 }
 
 .form-section {
-  width: 450px;
-  height: 450px;
+  width: 28.12rem;
+  height: 28.12rem;
   margin-left: auto;
 }
 
@@ -704,12 +714,12 @@ body {
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 .contact-form > input, .contact-form > textarea {
   width: 100%;
-  margin-bottom: 18px;
-  padding: 4px 20px;
+  margin-bottom: 1.15rem;
+  padding: 0.23rem 1.25rem;
   font: normal 400 1.25rem/2.5rem "Inter-Regular";
   color: #ffffff;
   background-color: transparent;
@@ -717,7 +727,6 @@ body {
   border-radius: none;
   caret-color: #ffffff;
   resize: none;
-  transition: all 0.4s linear;
 }
 .contact-form > input::placeholder, .contact-form > textarea::placeholder {
   font: normal 400 1.25rem/2.5rem "Inter-Regular";
@@ -725,34 +734,25 @@ body {
 }
 .contact-form > input:focus, .contact-form > textarea:focus {
   color: #ffffff;
-  background-color: #bdae82;
   outline: 1px solid #ffffff;
+  box-shadow: 0.4rem 0.4rem 0.5rem rgba(189, 174, 130, 0.6);
 }
 .contact-form > input:focus::placeholder, .contact-form > textarea:focus::placeholder {
-  color: #000000;
+  color: #ffffff;
 }
 
 .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: 150px;
 }
 
 .copyright {
-  display: flex;
   width: 170px;
-  justify-content: space-between;
-  align-items: center;
 }
 .copyright > small {
   font: inherit;
 }
 
 .social-links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 188px;
 }
 
@@ -760,42 +760,58 @@ body {
   display: block;
   width: 32px;
   height: 32px;
-  background-color: #ffffff;
-  -webkit-mask-size: cover;
-  mask-size: cover;
-  transition: background-color 0.6s ease-in;
-}
-.social-link:hover, .social-link:focus {
-  background-color: #bdae82;
 }
 
 .instagram-link {
+  background-color: #ffffff;
   -webkit-mask-image: url("../assets/svg/instagram-white.svg");
   mask-image: url("../assets/svg/instagram-white.svg");
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+.instagram-link:hover, .instagram-link:focus {
+  background-color: #bdae82;
 }
 
 .facebook-link {
+  background-color: #ffffff;
   -webkit-mask-image: url("../assets/svg/facebook-white.svg");
   mask-image: url("../assets/svg/facebook-white.svg");
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+.facebook-link:hover, .facebook-link:focus {
+  background-color: #bdae82;
 }
 
 .twitter-link {
+  background-color: #ffffff;
   -webkit-mask-image: url("../assets/svg/twitter-white.svg");
   mask-image: url("../assets/svg/twitter-white.svg");
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+.twitter-link:hover, .twitter-link:focus {
+  background-color: #bdae82;
 }
 
 .pinterest-link {
+  background-color: #ffffff;
   -webkit-mask-image: url("../assets/svg/pinterest-white.svg");
   mask-image: url("../assets/svg/pinterest-white.svg");
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+.pinterest-link:hover, .pinterest-link:focus {
+  background-color: #bdae82;
 }
 
 .button {
-  width: 220px;
-  height: 55px;
+  width: 13.75rem;
+  height: 3.44rem;
   background-color: transparent;
   border: 2px solid #bdae82;
   cursor: pointer;
-  transition: all 0.4s linear;
 }
 .button:visited {
   transform: scale(1);
@@ -811,11 +827,8 @@ body {
 .button_colored {
   background-color: #bdae82;
 }
-.button_price {
-  margin-top: 30px;
-}
 .button_form {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,19 +1,19 @@
 .main {
   margin: 0 auto;
 
-  background: url(../assets/img/hero-main-photo.jpg) 50% 90px no-repeat;
+  background: url(../assets/img/hero-main-photo.jpg) 50% 5.63rem no-repeat;
 }
 
 .article__container {
-  margin-top: -90px;
-  border-top: 90px solid transparent;
+  margin-top: -5.63rem;
+  border-top: 5.63rem solid transparent;
 }
 
 .hero-about {
   display: inline-flex;
   flex-direction: column;
   align-items: start;
-  margin: 255px auto 330px 60px;
+  margin: 15.94rem auto 20.63rem 3.75rem;
 }
 
 .main-title {
@@ -21,7 +21,7 @@
 }
 
 .main__description {
-  max-width: 470px;
-  margin: 0 0 20px 0;
-  padding: 5px 0;
+  max-width: 29.38rem;
+  margin: 0 0 1.25rem 0;
+  padding: 0.31rem 0;
 }

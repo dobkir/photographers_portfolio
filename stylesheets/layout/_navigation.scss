@@ -3,9 +3,7 @@
 }
 
 .nav-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @extend %flex-centered-items-space-btw;
   max-width: 500px;
   margin-left: auto;
   padding: 0 28px;

@@ -14,8 +14,8 @@
 }
 
 .section {
-  margin-top: -15px;
-  border-top: 15px solid transparent;
+  // It's stop scrolling at the right place in the section when navigating
+  border-top: 1px solid transparent;
   background-clip: padding-box;
 }
 
