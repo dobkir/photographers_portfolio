@@ -722,7 +722,7 @@ body {
   padding: 0 1.25rem;
   font: normal 400 1.25rem/2.94rem "Inter-Regular";
   color: #ffffff;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.5);
   border: 2px solid #bdae82;
   border-radius: none;
   caret-color: #ffffff;

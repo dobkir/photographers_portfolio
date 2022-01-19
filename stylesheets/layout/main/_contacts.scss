@@ -36,7 +36,7 @@
     font: $conact-form-font;
     color: $text-color;
 
-    background-color: transparent;
+    background-color: rgba($bg-color, 0.5);
     border: 2px solid $brand-color;
     border-radius: none;
     caret-color: $text-color;
