@@ -718,9 +718,9 @@ body {
 }
 .contact-form > input, .contact-form > textarea {
   width: 100%;
-  margin-bottom: 1.15rem;
-  padding: 0.23rem 1.25rem;
-  font: normal 400 1.25rem/2.5rem "Inter-Regular";
+  margin-bottom: 1.2rem;
+  padding: 0 1.25rem;
+  font: normal 400 1.25rem/2.94rem "Inter-Regular";
   color: #ffffff;
   background-color: transparent;
   border: 2px solid #bdae82;
@@ -729,7 +729,7 @@ body {
   resize: none;
 }
 .contact-form > input::placeholder, .contact-form > textarea::placeholder {
-  font: normal 400 1.25rem/2.5rem "Inter-Regular";
+  font: normal 400 1.25rem/2.94rem "Inter-Regular";
   color: #bdae82;
 }
 .contact-form > input:focus, .contact-form > textarea:focus {
@@ -746,7 +746,8 @@ body {
 }
 
 .copyright {
-  width: 170px;
+  width: 188px;
+  padding-right: 20px;
 }
 .copyright > small {
   font: inherit;
@@ -828,7 +829,7 @@ body {
   background-color: #bdae82;
 }
 .button_form {
-  margin-top: 1.25rem;
+  margin-top: 0.8rem;
 }
 
 /*# sourceMappingURL=style.css.map */

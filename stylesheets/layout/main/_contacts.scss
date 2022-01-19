@@ -30,10 +30,10 @@
   &>input,
   &>textarea {
     width: 100%;
-    margin-bottom: 1.15rem;
-    padding: 0.23rem 1.25rem;
+    margin-bottom: 1.2rem;
+    padding: 0 1.25rem;
 
-    font: $button-font;
+    font: $conact-form-font;
     color: $text-color;
 
     background-color: transparent;
@@ -45,7 +45,7 @@
     @extend %transition;
 
     &::placeholder {
-      font: $button-font;
+      font: $conact-form-font;
       color: $brand-color;
     }
 

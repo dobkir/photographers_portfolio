@@ -5,7 +5,8 @@
 
 .copyright {
   @extend %flex-centered-items-space-btw;
-  width: 170px;
+  width: 188px;
+  padding-right: 20px;
 
   >small {
     font: inherit;
