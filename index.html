@@ -22,13 +22,10 @@
 
 <body>
 
-
-
   <!--============ Header ============-->
 
   <header class="header">
     <div class="container container-header">
-
       <a class="logo" href="#main" title="Portfolio logo. Click on it to return to the heading"></a>
 
       <nav class="nav">
@@ -60,8 +57,14 @@
       </p>
       <!-- /.language-switcher -->
 
+      <button class="hamburger-button" type="button" aria-label="Hamburger button for mobile menu">
+        <span class="hamburger-button__line"></span>
+      </button>
+
+      <span class="mask"></span>
+
     </div>
-    <!-- /.container -->
+    <!-- /.container-header -->
 
   </header>
   <!-- /.header -->
@@ -96,7 +99,7 @@
 
           <li class="skill-item">
             <figure class="skill-icon">
-              <img src="assets/svg/camera-gold.svg" alt="icon: camera" width="62" height="50">
+              <img src="assets/svg/camera-gold.svg" alt="icon: camera" width="66" height="50">
               <figcaption class="skill-description">
                 <h3 class="skill-description_title">Digital photography</h3>
                 <p class="skill-description_text">High-quality photos in the studio and on the nature</p>
@@ -107,7 +110,7 @@
 
           <li class="skill-item">
             <figure class="skill-icon">
-              <img src="assets/svg/video-gold.svg" alt="icon: videotape with play button" width="62" height="50">
+              <img src="assets/svg/video-gold.svg" alt="icon: videotape with play button" width="66" height="50">
               <figcaption class="skill-description">
                 <h3 class="skill-description_title">Video shooting</h3>
                 <p class="skill-description_text">Capture your moments so that they always stay with you</p>
@@ -118,7 +121,7 @@
 
           <li class="skill-item">
             <figure class="skill-icon">
-              <img src="assets/svg/picture-gold.svg" alt="icon: picture" width="62" height="50">
+              <img src="assets/svg/picture-gold.svg" alt="icon: picture" width="66" height="50">
               <figcaption class="skill-description">
                 <h3 class="skill-description_title">Retouch</h3>
                 <p class="skill-description_text">I strive to make photography surpass reality</p>
@@ -129,7 +132,7 @@
 
           <li class="skill-item">
             <figure class="skill-icon">
-              <img src="assets/svg/microphone-gold.svg" alt="icon: classic microphone" width="62" height="50">
+              <img src="assets/svg/microphone-gold.svg" alt="icon: classic microphone" width="66" height="50">
               <figcaption class="skill-description">
                 <h3 class="skill-description_title">Audio</h3>
                 <p class="skill-description_text">Professional sounds recording for video, advertising, portfolio
@@ -155,19 +158,20 @@
         <ul class="galleries-list">
 
           <li class="galleries-switcher">
-            <button class="button" title="Click to view the gallery of winter photos">Winter</button>
+            <button class="button" type="button" title="Click to view the gallery of winter photos">Winter</button>
           </li>
 
           <li class="galleries-switcher">
-            <button class="button" title="Click to view the gallery of spring photos">Spring</button>
+            <button class="button" type="button" title="Click to view the gallery of spring photos">Spring</button>
           </li>
 
           <li class="galleries-switcher">
-            <button class="button" title="Click to view the gallery of summer photos">Summer</button>
+            <button class="button" type="button" title="Click to view the gallery of summer photos">Summer</button>
           </li>
 
           <li class="galleries-switcher">
-            <button class="button button_colored" title="Click to view the gallery of autumn photos">Autumn</button>
+            <button class="button button_colored" type="button"
+              title="Click to view the gallery of autumn photos">Autumn</button>
           </li>
 
         </ul>
@@ -310,7 +314,7 @@
       <a href="https://github.com/dobkir" target="_blank">github</a>
     </p>
 
-    <p>
+    <p class="rsschool-link">
       <a href="https://rs.school/js-stage0/" target="_blank">Rolling Scopes School</a>
     </p>
 

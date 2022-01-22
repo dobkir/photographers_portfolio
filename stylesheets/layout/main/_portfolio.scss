@@ -2,6 +2,11 @@
   @extend %flex-centered-justify;
   flex-wrap: wrap;
   gap: 0.31rem;
+
+  @include media-small-medium {
+    margin: 2rem;
+    padding: 0.3rem;
+  }
 }
 
 .portfolio-gallery {
@@ -9,5 +14,15 @@
   flex-wrap: wrap;
   gap: 1.56rem;
   margin: 3.75rem auto 0;
+
+  @include media-small-medium {
+    margin: 3.5rem auto 0;
+  }
 }
 
+.gallery-image {
+  @include media-small {
+    width: 297px;
+    height: 370px;
+  }
+}

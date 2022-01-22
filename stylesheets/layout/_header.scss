@@ -12,6 +12,16 @@
   @extend %flex-centered-items;
 
   background: linear-gradient(180deg, $bg-color 20%, transparent 50%);
+
+  @include media-small-medium {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @include media-small {
+    justify-content: space-between;
+    padding: 25px;
+  }
 }
 
 .logo {
@@ -21,8 +31,23 @@
   @include mask("../assets/svg/logo-white.svg");
 
   @extend %transition;
+
+  @include media-small-medium {
+    width: 50px;
+  }
+
+  @include media-small {
+    width: 45px;
+    height: 40px;
+  }
 }
 
 .language-switcher {
   min-width: 70px;
+
+  @include media-small-medium {
+    display: flex;
+    justify-content: space-between;
+    width: 82px;
+  }
 }

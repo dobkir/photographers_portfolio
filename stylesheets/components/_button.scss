@@ -29,6 +29,10 @@
 
   &_form {
     margin-top: 0.8rem;
+
+    @include media-small-medium {
+      margin: 0.8rem auto auto;
+    }
   }
 }
 

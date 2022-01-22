@@ -5,6 +5,11 @@
   column-gap: 1.56rem;
   margin-bottom: 6.25rem;
 
+  @include media-small-medium {
+    row-gap: 2.85rem;
+    margin-bottom: 5rem;
+  }
+
   &__card {
     width: 28.12rem;
     height: 31.56rem;
@@ -15,14 +20,37 @@
 
     &-title {
       margin: 2.6rem auto 0;
+
+      @include media-small {
+        margin: 1.6rem auto 0;
+      }
+    }
+
+    @include media-small-medium {
+      width: 26.25rem;
+      height: 31.56rem;
+      margin-top: 0.3rem;
+    }
+
+    @include media-small {
+      width: 24rem;
+      height: 28rem;
     }
   }
 }
 
 .price-list__card-price {
   margin: 1.25rem auto;
+
+  @include media-small {
+    margin: 0.8rem auto;
+  }
 }
 
 .service-list {
   margin-bottom: 2.4rem;
+
+  @include media-small {
+    margin-bottom: 1.6rem;
+  }
 }

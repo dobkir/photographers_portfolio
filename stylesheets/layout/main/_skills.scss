@@ -1,8 +1,20 @@
 .skills-list {
   @extend %flex-centered-items-space-btw;
   flex-wrap: wrap;
+  gap: 40px;
   margin: 0 auto;
   padding: 0 0.63rem;
+
+  @include media-large {
+    justify-content: center;
+    row-gap: 4.25rem;
+    column-gap: 2.75rem;
+    margin-bottom: 4.62rem;
+  }
+
+  @include media-medium-small {
+    margin-bottom: 2rem;
+  }
 }
 
 .skill-item {
@@ -14,8 +26,18 @@
 
 .skill-description_title {
   margin: 2.38rem auto 1.38rem;
+
+  @include media-small-medium {
+    margin: 1.125rem auto 0;
+  }
 }
 
 .skill-description_text {
   margin-bottom: 0.31rem;
+
+  @include media-small-medium {
+    margin-top: 1.38rem;
+
+    line-height: 1.38rem;
+  }
 }

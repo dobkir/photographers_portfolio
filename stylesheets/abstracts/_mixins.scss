@@ -1,3 +1,5 @@
+/// For interactive icons .svg
+
 @mixin mask(
   $image-url,
   $mask-size: cover,
@@ -5,6 +7,7 @@
   $hover-color: $brand-color
   ) {
   background-color: $bg-color;
+  background-position: center;
   -webkit-mask-image: url("#{$image-url}");
   mask-image: url("#{$image-url}");
   -webkit-mask-size: $mask-size;
@@ -15,3 +18,31 @@
     background-color: $hover-color;
   }
 }
+
+
+
+/// Adaptive design
+@mixin media-maximal {
+    @media (max-width: $maximal-width) { @content; }
+}
+
+@mixin media-large {
+    @media (max-width: $large-width) { @content; }
+}
+
+@mixin media-medium {
+    @media (max-width: $medium-width) { @content; }
+}
+
+@mixin media-small-medium {
+    @media (max-width: $small-medium-width) { @content; }
+}
+
+@mixin media-medium-small {
+    @media (max-width: $medium-small-width) { @content; }
+}
+
+@mixin media-small {
+    @media (max-width: $small-width) { @content; }
+}
+

@@ -1,6 +1,11 @@
 .footer {
   @extend %flex-centered-items-space-btw;
   height: 150px;
+
+  @include media-small-medium {
+    flex-direction: column;
+    line-height: 1.5rem;
+  }
 }
 
 .copyright {
@@ -11,11 +16,27 @@
   >small {
     font: inherit;
   }
+
+  @include media-small-medium {
+    width: 170px;
+    padding: 0;
+    margin: 1.7rem auto 0;
+  }
+}
+
+.rsschool-link {
+  @include media-small-medium {
+    margin-top: 1rem;
+  }
 }
 
 .social-links {
   @extend %flex-centered-items-space-btw;
   width: 188px;
+
+  @include media-small-medium {
+    margin: 0.55rem auto auto;
+  }
 }
 
 .social-link {

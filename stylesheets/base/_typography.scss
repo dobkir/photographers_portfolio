@@ -11,16 +11,30 @@ body {
   font: $navigation-font;
 }
 
+.nav-list {
+  @include media-small-medium {
+    font: $mobile-navigation-font;
+  }
+}
+
 .language-switcher {
   letter-spacing: 1.2px;
 }
 
 .main-title {
   font: $title-font;
+
+  @include media-small-medium {
+    font: $mobile-title-font;
+  }
 }
 
 .main__description {
   font: $button-font;
+
+  @include media-small-medium {
+    line-height: 1.5rem;
+  }
 }
 
 .button {
@@ -45,6 +59,10 @@ body {
 .last-section-title {
   font: $section-title-font;
   color: $brand-color;
+
+  @include media-small-medium {
+    font: $mobile-section-title-font;
+  }
 }
 
 .skill-description_title {

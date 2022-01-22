@@ -7,17 +7,38 @@
 
   background: url(../assets/img/hero-additional-photo.jpg) 50% 50% no-repeat;
   background-size: auto 700px;
+
+  @include media-small-medium {
+    height: 37.5rem;
+    background-size: cover;
+    padding: 4.5rem 0 0;
+  }
+
+  @include media-medium-small {
+    background-position: 15% 0;
+  }
 }
 
 .form-section {
-  width: 28.12rem;
+  max-width: 28.12rem;
   height: 28.12rem;
   margin-left: auto;
-}
 
+  @include media-small-medium {
+    margin-right: auto;
+  }
+
+  @include media-small {
+    width: 86%;
+  }
+}
 
 .last-section-title {
   margin: 0;
+
+  @include media-small-medium {
+    text-align: center;
+  }
 }
 
 .contact-form {
@@ -26,6 +47,10 @@
   align-items: flex-start;
   width: 100%;
   margin-top: 2.5rem;
+
+  @include media-small-medium {
+    margin-top: 3.25rem;
+  }
 
   &>input,
   &>textarea {
@@ -43,6 +68,10 @@
 
     resize: none;
     @extend %transition;
+
+    @include media-small-medium {
+      padding: 0 1.125rem;
+    }
 
     &::placeholder {
       font: $conact-form-font;
