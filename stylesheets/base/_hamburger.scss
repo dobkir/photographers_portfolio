@@ -3,9 +3,10 @@
     z-index: 3;
 
     display: none;
-    width: 55px;
+    width: 50px;
     height: 28px;
     margin-left: 20px;
+    margin-right: 5px;
 
     background-color: transparent;
     border: transparent;
@@ -49,7 +50,7 @@
     }
 
   &.active-hamburger-button {
-    margin-left: 12px;
+    margin-right: 8px;
 
     span {
       opacity: 0;

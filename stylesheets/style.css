@@ -563,9 +563,10 @@ body {
   position: relative;
   z-index: 3;
   display: none;
-  width: 55px;
+  width: 50px;
   height: 28px;
   margin-left: 20px;
+  margin-right: 5px;
   background-color: transparent;
   border: transparent;
   outline: none;
@@ -602,7 +603,7 @@ body {
   top: calc(50% - 1.5px);
 }
 .hamburger-button.active-hamburger-button {
-  margin-left: 12px;
+  margin-right: 8px;
 }
 .hamburger-button.active-hamburger-button span {
   opacity: 0;
@@ -676,21 +677,27 @@ body {
 }
 @media (max-width: 768px) {
   .language-switcher {
-    display: flex;
-    justify-content: space-between;
-    width: 82px;
+    width: 80px;
     margin-left: auto;
     margin-right: 0;
+  }
+  .language-switcher > span {
+    margin-right: 8px;
   }
 }
 @media (max-width: 320px) {
   .language-switcher {
-    margin-right: auto;
+    padding-right: auto;
   }
 }
 
 .nav {
   width: 100%;
+}
+@media (max-width: 992px) {
+  .nav {
+    width: 90%;
+  }
 }
 @media (max-width: 768px) {
   .nav {
@@ -877,7 +884,7 @@ body {
     justify-content: center;
     row-gap: 4rem;
     column-gap: 2.75rem;
-    margin-bottom: 4.62rem;
+    margin-bottom: 4.4rem;
   }
 }
 @media (max-width: 480px) {
@@ -954,6 +961,10 @@ body {
   .container-video {
     padding-left: 0;
     padding-right: 0;
+  }
+  .container-video > .section-title {
+    width: 47.619047619%;
+    margin: 6.25rem auto 4.4rem;
   }
 }
 
@@ -1051,7 +1062,7 @@ body {
 }
 
 .price-list__card-price {
-  margin: 1.2rem auto;
+  margin: 1.25rem auto;
 }
 @media (max-width: 320px) {
   .price-list__card-price {

@@ -48,14 +48,16 @@
   min-width: 70px;
 
   @include media-small-medium {
-    display: flex;
-    justify-content: space-between;
-    width: 82px;
+    width: 80px;
     margin-left: auto;
     margin-right: 0;
+
+    &>span {
+      margin-right: 8px;
+    }
   }
 
   @include media-small {
-    margin-right: auto;
+    padding-right: auto;
   }
 }

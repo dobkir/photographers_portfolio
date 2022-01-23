@@ -3,6 +3,10 @@
 
   @extend %transition-short;
 
+  @include media-medium {
+    width: 90%;
+  }
+
   @include media-small-medium {
     position: fixed;
     top: 0;
