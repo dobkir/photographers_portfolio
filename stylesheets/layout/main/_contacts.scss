@@ -1,7 +1,7 @@
 .contacts {
-  width: calc(100% + 2.5rem);
+  width: 100%;
   height: 43.75rem;
-  margin: 0 -1.25rem;
+  margin: 0 auto;
   padding-top: 3.75rem;
   padding-right: 1.25rem;
 
@@ -19,17 +19,26 @@
   }
 }
 
-.form-section {
-  max-width: 28.12rem;
-  height: 28.12rem;
-  margin-left: auto;
+.container-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;
+
+  padding-left: 10px;
+  padding-right: 10px;
+
 
   @include media-small-medium {
-    margin-right: auto;
+    align-items: center;
   }
+}
 
-  @include media-small {
-    width: 86%;
+.form-section {
+  width: 28.12rem;
+  height: 28.12rem;
+
+  @include media-medium-small {
+    width: 90%;
   }
 }
 
@@ -44,11 +53,11 @@
 .contact-form {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   width: 100%;
   margin-top: 2.5rem;
 
   @include media-small-medium {
+    align-items: center;
     margin-top: 3.25rem;
   }
 
@@ -56,22 +65,17 @@
   &>textarea {
     width: 100%;
     margin-bottom: 1.2rem;
-    padding: 0 1.25rem;
+    padding: 0 1.125rem;
 
     font: $conact-form-font;
     color: $text-color;
 
     background-color: rgba($bg-color, 0.5);
     border: 2px solid $brand-color;
-    border-radius: none;
     caret-color: $text-color;
 
     resize: none;
     @extend %transition;
-
-    @include media-small-medium {
-      padding: 0 1.125rem;
-    }
 
     &::placeholder {
       font: $conact-form-font;
@@ -81,7 +85,6 @@
     &:focus {
       color: $text-color;
 
-      // background-color: $brand-color;
       outline: 1px solid $text-color;
       box-shadow: 0.4rem 0.4rem 0.5rem rgba($brand-color, 0.6);
 
@@ -89,6 +92,11 @@
         color: $text-color;
       }
     }
+  }
+
+  &>textarea {
+    height: 100px;
+    margin-bottom: 1.9rem;
   }
 }
 

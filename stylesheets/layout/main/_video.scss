@@ -1,3 +1,10 @@
+.container-video {
+  @include media-small-medium {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .video-presentation {
   position: relative;
 
@@ -9,11 +16,10 @@
   background-size: cover;
 
   @include media-small-medium {
-    width: 100vw;
-    margin: 4.38rem -20px auto -20px;
+    width: 100%;
     height: calc(100vw / 1.85);
 
-    background-position: 8% 50%;
+    background-position: 8% 0;
   }
 
   @include media-medium-small {

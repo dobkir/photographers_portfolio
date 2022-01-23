@@ -22,7 +22,7 @@ smoothScrollElems.forEach(link => {
 // ========================================== The mobile menu ========================================== //
 
 const hamburgerButton = document.querySelector('.hamburger-button')
-const nav = document.querySelector('.nav-list')
+const nav = document.querySelector('.nav')
 const pageMask = document.querySelector('.mask')
 const body = document.body
 
@@ -38,14 +38,14 @@ function removePageMask() {
 
 function showMobileMenu() {
   hamburgerButton.classList.add('active-hamburger-button')
-  nav.classList.add('show-mobile-menu')
+  nav.classList.add('show-mobile-navigation')
   body.classList.add('no-scroll')
   addPageMask()
 }
 
 function closeMobileMenu() {
   hamburgerButton.classList.remove('active-hamburger-button')
-  nav.classList.remove('show-mobile-menu')
+  nav.classList.remove('show-mobile-navigation')
   body.classList.remove('no-scroll')
   removePageMask()
 }
@@ -59,7 +59,7 @@ function handlerMenu(event) {
 };
 
 function toggleMobileMenu() {
-  if (nav.classList.contains('show-mobile-menu')) {
+  if (nav.classList.contains('show-mobile-navigation')) {
     nav.removeEventListener('click', handlerMenu)
     closeMobileMenu()
   } else {

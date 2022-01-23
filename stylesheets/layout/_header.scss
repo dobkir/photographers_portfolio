@@ -43,11 +43,19 @@
 }
 
 .language-switcher {
+  display: flex;
+  justify-content: space-between;
   min-width: 70px;
 
   @include media-small-medium {
     display: flex;
     justify-content: space-between;
     width: 82px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  @include media-small {
+    margin-right: auto;
   }
 }

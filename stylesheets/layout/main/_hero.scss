@@ -1,0 +1,94 @@
+
+.hero {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.container-hero {
+  margin-top: -5.63rem;
+  border-top: 5.63rem solid transparent;
+  width: 100%;
+  height: 1000px;
+
+  background: url(../assets/img/hero-main-photo.jpg) 50% 0 no-repeat;
+
+  @include media-small-medium {
+    height: 680px;
+    // background-size: auto 105%;
+    // background-position: 2% 104%;
+    background: url(../assets/img/hero-main-photo-media-small.jpg) 50% 0 no-repeat;
+  }
+
+  @include media-medium-small {
+    height: 680px;
+    background-size: auto 95%;
+    background-position: 70% 0;
+  }
+
+  @include media-small {
+    background-position: 70% 0;
+  }
+}
+
+.hero__about {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 15.8rem auto auto 3.75rem;
+
+  @include media-small-medium {
+    margin: 10.5rem auto 9.5rem 2.5rem;
+  }
+
+  @include media-medium-small {
+    margin: 10.5rem auto 9.5rem 1rem;
+  }
+
+  @include media-small {
+    margin-left: 0;
+
+    text-shadow:
+		-0   -0.5px 0.5px $brand-color,
+		 0   -0.5px 0.5px $brand-color,
+		-0    0.5px 0.5px $brand-color,
+		 0    0.5px 0.5px $brand-color,
+		-0.5px -0   0.5px $brand-color,
+		 0.5px -0   0.5px $brand-color,
+		-0.5px  0   0.5px $brand-color,
+		 0.5px  0   0.5px $brand-color,
+		-0.5px -0.5px 0.5px $brand-color,
+		 0.5px -0.5px 0.5px $brand-color,
+		-0.5px  0.5px 0.5px $brand-color,
+		 0.5px  0.5px 0.5px $brand-color,
+		-0.5px -0.5px 0.5px $brand-color,
+		 0.5px -0.5px 0.5px $brand-color,
+		-0.5px  0.5px 0.5px $brand-color,
+		 0.5px  0.5px 0.5px $brand-color;
+  }
+}
+
+.hero-title {
+  margin: 0;
+}
+
+.hero-description {
+  max-width: 29.38rem;
+  margin: 0 0 1.38rem 0;
+  padding: 0.31rem 0;
+
+  @include media-small-medium {
+    max-width: 24.5rem;
+    margin: 1rem 0 3.35rem 0;
+  }
+
+  @include media-medium-small {
+    max-width: 14.5rem;
+    margin: 1rem 0 2rem 0;
+  }
+
+  @include media-medium-small {
+    max-width: 13rem;
+    margin: 1rem 0 1.5rem 0;
+  }
+}

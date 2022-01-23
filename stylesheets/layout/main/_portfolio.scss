@@ -21,6 +21,14 @@
 }
 
 .gallery-image {
+  max-width: 450px;
+  max-height: 560px;
+
+  @include media-medium-small {
+    width: 90%;
+    height: 90%
+  }
+
   @include media-small {
     width: 297px;
     height: 370px;

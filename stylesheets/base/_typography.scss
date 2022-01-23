@@ -17,11 +17,7 @@ body {
   }
 }
 
-.language-switcher {
-  letter-spacing: 1.2px;
-}
-
-.main-title {
+.hero-title {
   font: $title-font;
 
   @include media-small-medium {
@@ -29,7 +25,7 @@ body {
   }
 }
 
-.main__description {
+.hero-description {
   font: $button-font;
 
   @include media-small-medium {
