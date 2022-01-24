@@ -22,6 +22,10 @@
   padding: 0 0.63rem;
 
   text-align: center;
+
+  @include media-small-medium {
+    padding: 0 0.78rem 0 0.53rem;
+  }
 }
 
 .skill-description_title {

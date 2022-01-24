@@ -6,6 +6,11 @@
     >.section-title {
       width: calc(100% / 2.1);
       margin: 6.25rem auto 4.4rem;
+
+      @include media-medium-small {
+        width: calc((100% / 1.2) - 40px);
+        margin: 4rem auto 4rem;
+      }
     }
   }
 }
@@ -24,7 +29,8 @@
     width: 100%;
     height: calc(100vw / 1.85);
 
-    background-position: 8% 0;
+    background: url(../assets/img/wedding-videos-poster-small.jpg) 50% 50% no-repeat;
+    background-position: 50% 50%;
   }
 
   @include media-medium-small {
@@ -53,6 +59,10 @@
   &:hover,
   &:focus {
     transform: translateZ(0) scale(.9);
+  }
+
+  &:active {
+    transform: translateZ(0) scale(1);
   }
 
   @include media-small-medium {

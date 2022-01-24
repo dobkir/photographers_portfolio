@@ -27,9 +27,12 @@
     }
   }
 
-  @include media-medium-small {
+  @media (max-width: 620px) {
     width: 100vw;
   }
+  // @include media-medium-small {
+  //   width: 100vw;
+  // }
 }
 
 .nav-list {

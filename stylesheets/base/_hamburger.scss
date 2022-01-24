@@ -16,7 +16,7 @@
       display: inline-block;
     }
 
-    @include media-small {
+    @include media-medium-small {
       width: 45px;
       height: 24px;
     }
@@ -66,6 +66,10 @@
     &:after {
       width: 120%;
       transform: rotate(-45deg);
+    }
+
+    @include media-medium-small {
+      margin-right: -20px;
     }
   }
 }

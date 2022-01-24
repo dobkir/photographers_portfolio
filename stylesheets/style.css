@@ -576,7 +576,7 @@ body {
     display: inline-block;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .hamburger-button {
     width: 45px;
     height: 24px;
@@ -619,6 +619,11 @@ body {
   width: 120%;
   transform: rotate(-45deg);
 }
+@media (max-width: 480px) {
+  .hamburger-button.active-hamburger-button {
+    margin-right: -20px;
+  }
+}
 
 .header {
   position: fixed;
@@ -648,6 +653,7 @@ body {
 .logo {
   width: 55px;
   height: 50px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background-color: #ffffff;
   background-position: center;
   -webkit-mask-image: url("../assets/svg/logo-white.svg");
@@ -657,6 +663,9 @@ body {
 }
 .logo:hover, .logo:focus {
   background-color: #bdae82;
+}
+.logo:active {
+  background-color: #ab9861;
 }
 @media (max-width: 768px) {
   .logo {
@@ -716,7 +725,7 @@ body {
     transform: translateX(0);
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 620px) {
   .nav {
     width: 100vw;
   }
@@ -898,6 +907,11 @@ body {
   padding: 0 0.63rem;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .skill-item {
+    padding: 0 0.78rem 0 0.53rem;
+  }
+}
 
 .skill-description_title {
   margin: 2.38rem auto 1.25rem;
@@ -967,6 +981,12 @@ body {
     margin: 6.25rem auto 4.4rem;
   }
 }
+@media (max-width: 768px) and (max-width: 480px) {
+  .container-video > .section-title {
+    width: calc(83.3333333333% - 40px);
+    margin: 4rem auto 4rem;
+  }
+}
 
 .video-presentation {
   position: relative;
@@ -980,7 +1000,8 @@ body {
   .video-presentation {
     width: 100%;
     height: 54.0540540541vw;
-    background-position: 8% 0;
+    background: url(../assets/img/wedding-videos-poster-small.jpg) 50% 50% no-repeat;
+    background-position: 50% 50%;
   }
 }
 @media (max-width: 480px) {
@@ -998,6 +1019,7 @@ body {
   width: 130px;
   height: 130px;
   margin: auto;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background-color: #ffffff;
   background-position: center;
   -webkit-mask-image: url("../assets/svg/play-button-for-video-player-white.svg");
@@ -1011,8 +1033,14 @@ body {
 .play-video-button:hover, .play-video-button:focus {
   background-color: #bdae82;
 }
+.play-video-button:active {
+  background-color: #ab9861;
+}
 .play-video-button:hover, .play-video-button:focus {
   transform: translateZ(0) scale(0.9);
+}
+.play-video-button:active {
+  transform: translateZ(0) scale(1);
 }
 @media (max-width: 768px) {
   .play-video-button {
@@ -1062,7 +1090,12 @@ body {
 }
 
 .price-list__card-price {
-  margin: 1.25rem auto;
+  margin: 1.2rem auto;
+}
+@media (max-width: 768px) {
+  .price-list__card-price {
+    margin: 1.25rem auto;
+  }
 }
 @media (max-width: 320px) {
   .price-list__card-price {
@@ -1220,6 +1253,7 @@ body {
 }
 
 .instagram-link {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background-color: #ffffff;
   background-position: center;
   -webkit-mask-image: url("../assets/svg/instagram-white.svg");
@@ -1230,8 +1264,12 @@ body {
 .instagram-link:hover, .instagram-link:focus {
   background-color: #bdae82;
 }
+.instagram-link:active {
+  background-color: #ab9861;
+}
 
 .facebook-link {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background-color: #ffffff;
   background-position: center;
   -webkit-mask-image: url("../assets/svg/facebook-white.svg");
@@ -1242,8 +1280,12 @@ body {
 .facebook-link:hover, .facebook-link:focus {
   background-color: #bdae82;
 }
+.facebook-link:active {
+  background-color: #ab9861;
+}
 
 .twitter-link {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background-color: #ffffff;
   background-position: center;
   -webkit-mask-image: url("../assets/svg/twitter-white.svg");
@@ -1254,8 +1296,12 @@ body {
 .twitter-link:hover, .twitter-link:focus {
   background-color: #bdae82;
 }
+.twitter-link:active {
+  background-color: #ab9861;
+}
 
 .pinterest-link {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background-color: #ffffff;
   background-position: center;
   -webkit-mask-image: url("../assets/svg/pinterest-white.svg");
@@ -1265,6 +1311,9 @@ body {
 }
 .pinterest-link:hover, .pinterest-link:focus {
   background-color: #bdae82;
+}
+.pinterest-link:active {
+  background-color: #ab9861;
 }
 
 .button {
