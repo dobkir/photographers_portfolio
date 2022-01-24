@@ -17,7 +17,7 @@
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/favicon/logo-gold-114x114.png">
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/favicon/logo-gold-144x144.png">
   <link rel="stylesheet" href="stylesheets/style.css">
-  <script src="index.js" defer></script>
+  <script type="module" src="js/index.js" defer></script>
 </head>
 
 <body>
@@ -169,19 +169,22 @@
           <ul class="galleries-list">
 
             <li class="galleries-switcher">
-              <button class="button" type="button" title="Click to view the gallery of winter photos">Winter</button>
+              <button class="button button_portfolio" type="button" data-season="winter"
+                title="Click to view the gallery of winter photos">Winter</button>
             </li>
 
             <li class="galleries-switcher">
-              <button class="button" type="button" title="Click to view the gallery of spring photos">Spring</button>
+              <button class="button button_portfolio" type="button" data-season="spring"
+                title="Click to view the gallery of spring photos">Spring</button>
             </li>
 
             <li class="galleries-switcher">
-              <button class="button" type="button" title="Click to view the gallery of summer photos">Summer</button>
+              <button class="button button_portfolio" type="button" data-season="summer"
+                title="Click to view the gallery of summer photos">Summer</button>
             </li>
 
             <li class="galleries-switcher">
-              <button class="button button_colored" type="button"
+              <button class="button button_portfolio" type="button" data-season="autumn"
                 title="Click to view the gallery of autumn photos">Autumn</button>
             </li>
 
