@@ -5,7 +5,7 @@
   column-gap: 1.56rem;
   margin-bottom: 6.25rem;
 
-  @include media-small-medium {
+  @include media-tablet-portrait {
     row-gap: 2.85rem;
     margin-bottom: 5rem;
   }
@@ -21,18 +21,18 @@
     &-title {
       margin: 2.6rem auto 0;
 
-      @include media-small {
+      @include media-iphone5 {
         margin: 1.6rem auto 0;
       }
     }
 
-    @include media-small-medium {
+    @include media-tablet-portrait {
       width: 26.25rem;
       height: 31.56rem;
       margin-top: 0.3rem;
     }
 
-    @include media-small {
+    @include media-iphone5 {
       width: 24rem;
       height: 28rem;
     }
@@ -42,11 +42,11 @@
 .price-list__card-price {
   margin: 1.2rem auto;
 
-  @include media-small-medium {
+  @include media-tablet-portrait {
     margin: 1.25rem auto;
   }
 
-  @include media-small {
+  @include media-iphone5 {
     margin: 0.8rem auto;
   }
 }
@@ -54,7 +54,7 @@
 .service-list {
   margin-bottom: 2.5rem;
 
-  @include media-small {
+  @include media-iphone5 {
     margin-bottom: 1.6rem;
   }
 }

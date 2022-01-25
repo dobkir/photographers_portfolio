@@ -1,5 +1,5 @@
 .container-video {
-  @include media-small-medium {
+  @include media-tablet-portrait {
     padding-left: 0;
     padding-right: 0;
 
@@ -7,7 +7,7 @@
       width: calc(100% / 2.1);
       margin: 6.25rem auto 4.4rem;
 
-      @include media-medium-small {
+      @include media-phone {
         width: calc((100% / 1.2) - 40px);
         margin: 4rem auto 4rem;
       }
@@ -25,16 +25,22 @@
   background: url(../assets/img/wedding-videos-poster.jpg) 50% 50% no-repeat;
   background-size: cover;
 
-  @include media-small-medium {
+
+  @include media-desktop {
+    height: calc(100vw / 2.2);
+    background-position: 25% 50%;
+  }
+
+  @include media-tablet-portrait {
     width: 100%;
     height: calc(100vw / 1.85);
 
     background: url(../assets/img/wedding-videos-poster-small.jpg) 50% 50% no-repeat;
-    background-position: 50% 50%;
   }
 
-  @include media-medium-small {
+  @include media-phone {
     height: calc(100vw / 1.2);
+    background-position: 25% 50%;
   }
 }
 
@@ -65,7 +71,7 @@
     transform: translateZ(0) scale(1);
   }
 
-  @include media-small-medium {
+  @include media-tablet-portrait {
     width: 65px;
     height: 65px;
   }

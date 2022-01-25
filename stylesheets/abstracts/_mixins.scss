@@ -28,28 +28,41 @@
 
 
 
-/// Adaptive design
-@mixin media-maximal {
-    @media (max-width: $maximal-width) { @content; }
+/// Adaptive design breakpoints
+
+
+// TV
+@mixin media-tv {
+  @media (min-width: 1400px) { @content; }
 }
 
-@mixin media-large {
-    @media (max-width: $large-width) { @content; }
+// Large desktops and laptops
+@mixin media-desktop-large {
+  @media (max-width: 1399px) { @content; }
 }
 
-@mixin media-medium {
-    @media (max-width: $medium-width) { @content; }
+// Landscape tablets and medium desktops
+@mixin media-desktop {
+  @media (max-width: 1199px) { @content; }
 }
 
-@mixin media-small-medium {
-    @media (max-width: $small-medium-width) { @content; }
+
+// Portrait tablets and small desktops
+@mixin media-tablet-landscape {
+  @media (max-width: 991px) { @content; }
 }
 
-@mixin media-medium-small {
-    @media (max-width: $medium-small-width) { @content; }
+// Landscape phones and portrait tablets
+@mixin media-tablet-portrait {
+  @media (max-width: 768px) { @content; }
 }
 
-@mixin media-small {
-    @media (max-width: $small-width) { @content; }
+// Portrait phones and smaller
+@mixin media-phone {
+  @media (max-width: 480px) { @content; }
 }
 
+// Iphone 5
+@mixin media-iphone5 {
+  @media (max-width: 320px) { @content; }
+}

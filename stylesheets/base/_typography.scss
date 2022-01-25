@@ -12,7 +12,7 @@ body {
 }
 
 .nav-list {
-  @include media-small-medium {
+  @include media-tablet-portrait {
     font: $mobile-navigation-font;
   }
 }
@@ -20,7 +20,7 @@ body {
 .hero-title {
   font: $title-font;
 
-  @include media-small-medium {
+  @include media-tablet-portrait {
     font: $mobile-title-font;
   }
 }
@@ -28,7 +28,7 @@ body {
 .hero-description {
   font: $button-font;
 
-  @include media-small-medium {
+  @include media-tablet-portrait {
     line-height: 1.5rem;
   }
 }
@@ -56,7 +56,7 @@ body {
   font: $section-title-font;
   color: $brand-color;
 
-  @include media-small-medium {
+  @include media-tablet-portrait {
     font: $mobile-section-title-font;
   }
 }

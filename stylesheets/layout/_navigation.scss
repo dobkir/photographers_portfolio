@@ -3,11 +3,11 @@
 
   @extend %transition-short;
 
-  @include media-medium {
+  @include media-tablet-landscape {
     width: 90%;
   }
 
-  @include media-small-medium {
+  @include media-tablet-portrait {
     position: fixed;
     top: 0;
     right: 0;
@@ -30,7 +30,7 @@
   @media (max-width: 620px) {
     width: 100vw;
   }
-  // @include media-medium-small {
+  // @include media-phone {
   //   width: 100vw;
   // }
 }
@@ -41,7 +41,7 @@
   margin-left: auto;
   padding: 0 1.9rem;
 
-  @include media-small-medium {
+  @include media-tablet-portrait {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -50,7 +50,7 @@
     padding: 8.46rem 0 0 8rem;
   }
 
-  @include media-medium-small {
+  @include media-phone {
     justify-content: center;
     align-items: center;
     padding: 2.5rem 0 0;
@@ -58,7 +58,7 @@
 }
 
 .nav-item {
-  @include media-small-medium {
+  @include media-tablet-portrait {
      padding-bottom: 1rem;
   }
 }

@@ -12,11 +12,11 @@
     border: transparent;
     outline: none;
 
-    @include media-small-medium {
+    @include media-tablet-portrait {
       display: inline-block;
     }
 
-    @include media-medium-small {
+    @include media-phone {
       width: 45px;
       height: 24px;
     }
@@ -68,7 +68,7 @@
       transform: rotate(-45deg);
     }
 
-    @include media-medium-small {
+    @include media-phone {
       margin-right: -20px;
     }
   }

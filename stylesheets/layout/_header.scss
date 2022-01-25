@@ -13,12 +13,12 @@
 
   background: linear-gradient(180deg, $bg-color 20%, transparent 50%);
 
-  @include media-small-medium {
+  @include media-tablet-portrait {
     padding-left: 60px;
     padding-right: 60px;
   }
 
-  @include media-small {
+  @include media-iphone5 {
     justify-content: space-between;
     padding: 25px;
   }
@@ -32,11 +32,11 @@
 
   @extend %transition;
 
-  @include media-small-medium {
+  @include media-tablet-portrait {
     width: 50px;
   }
 
-  @include media-small {
+  @include media-iphone5 {
     width: 45px;
     height: 40px;
   }
@@ -47,7 +47,7 @@
   justify-content: space-between;
   min-width: 70px;
 
-  @include media-small-medium {
+  @include media-tablet-portrait {
     width: 80px;
     margin-left: auto;
     margin-right: 0;
@@ -57,7 +57,7 @@
     }
   }
 
-  @include media-small {
+  @include media-iphone5 {
     padding-right: auto;
   }
 }

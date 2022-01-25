@@ -2,7 +2,7 @@
   @extend %flex-centered-items-space-btw;
   height: 150px;
 
-  @include media-small-medium {
+  @include media-tablet-portrait {
     flex-direction: column;
     line-height: 1.5rem;
   }
@@ -17,7 +17,7 @@
     font: inherit;
   }
 
-  @include media-small-medium {
+  @include media-tablet-portrait {
     width: 170px;
     padding: 0;
     margin: 1.7rem auto 0;
@@ -25,7 +25,7 @@
 }
 
 .rsschool-link {
-  @include media-small-medium {
+  @include media-tablet-portrait {
     margin-top: 1rem;
   }
 }
@@ -34,7 +34,7 @@
   @extend %flex-centered-items-space-btw;
   width: 188px;
 
-  @include media-small-medium {
+  @include media-tablet-portrait {
     margin: 0.55rem auto auto;
   }
 }

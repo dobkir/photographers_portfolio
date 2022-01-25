@@ -26,11 +26,11 @@
     background: $brand-color;
   }
 
-  @include media-small-medium {
+  @include media-tablet-portrait {
     margin: 6.25rem auto 4rem;
   }
 
-  @include media-medium-small {
+  @include media-phone {
     width: calc(100% / 1.2);
     margin: 4rem auto 4rem;
   }

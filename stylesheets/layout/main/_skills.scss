@@ -1,18 +1,18 @@
 .skills-list {
   @extend %flex-centered-items-space-btw;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 2.5rem;
   margin: 0 auto;
   padding: 0 0.63rem;
 
-  @include media-large {
+  @include media-desktop-large {
     justify-content: center;
     row-gap: 4rem;
     column-gap: 2.75rem;
     margin-bottom: 4.4rem;
   }
 
-  @include media-medium-small {
+  @include media-phone {
     margin-bottom: 2rem;
   }
 }
@@ -23,7 +23,7 @@
 
   text-align: center;
 
-  @include media-small-medium {
+  @include media-tablet-portrait {
     padding: 0 0.78rem 0 0.53rem;
   }
 }
@@ -31,7 +31,7 @@
 .skill-description_title {
   margin: 2.38rem auto 1.25rem;
 
-  @include media-small-medium {
+  @include media-tablet-portrait {
     margin: 1.125rem auto 0;
   }
 }
@@ -39,7 +39,7 @@
 .skill-description_text {
   margin-bottom: 0.55rem;
 
-  @include media-small-medium {
+  @include media-tablet-portrait {
     margin-top: 1.38rem;
 
     line-height: 1.38rem;

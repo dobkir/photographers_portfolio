@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   gap: 0.31rem;
 
-  @include media-small-medium {
+  @include media-tablet-portrait {
     margin: 2rem;
     padding: 0.3rem;
   }
@@ -15,7 +15,7 @@
   gap: 1.56rem;
   margin: 3.75rem auto 0;
 
-  @include media-small-medium {
+  @include media-tablet-portrait {
     margin: 3.5rem auto 0;
   }
 }
@@ -24,12 +24,12 @@
   max-width: 450px;
   max-height: 560px;
 
-  @include media-medium-small {
+  @include media-phone {
     width: 90%;
     height: 90%
   }
 
-  @include media-small {
+  @include media-iphone5 {
     width: 297px;
     height: 370px;
   }
