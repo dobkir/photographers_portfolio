@@ -624,6 +624,11 @@ body {
     margin-right: -20px;
   }
 }
+@media (max-width: 320px) {
+  .hamburger-button.active-hamburger-button {
+    margin-right: 0;
+  }
+}
 
 .header {
   position: fixed;
@@ -723,6 +728,7 @@ body {
   }
   .nav.show-mobile-navigation {
     transform: translateX(0);
+    overflow: auto;
   }
 }
 @media (max-width: 620px) {
@@ -1327,6 +1333,7 @@ body {
   height: 3.44rem;
   background-color: transparent;
   border: 2px solid #bdae82;
+  outline: none;
   cursor: pointer;
 }
 .button:visited {
@@ -1334,14 +1341,22 @@ body {
   box-shadow: none;
 }
 .button:hover, .button:focus {
+  background-color: #bdae82;
   box-shadow: 0.3rem 0.3rem 0.3rem rgba(189, 174, 130, 0.6);
   transform: scale(0.96);
 }
 .button:active {
   transform: scale(1);
+  box-shadow: none;
 }
 .button_colored {
   background-color: #bdae82;
+  color: #000000;
+}
+.button_colored:focus {
+  transform: scale(1);
+  box-shadow: none;
+  color: #000000;
 }
 
 /*# sourceMappingURL=style.css.map */

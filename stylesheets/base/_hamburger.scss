@@ -71,6 +71,10 @@
     @include media-phone {
       margin-right: -20px;
     }
+
+    @include media-iphone5 {
+      margin-right: 0;
+    }
   }
 }
 

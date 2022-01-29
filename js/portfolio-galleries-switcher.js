@@ -11,17 +11,18 @@ export default function switchPortfolioGallery() {
 
     if (target.classList.contains('button_portfolio')) {
       const currentSeason = target.dataset.season
+
+      portfolioButtonsArr.forEach(button =>
+        button.classList.contains('button_colored') &&
+        button.classList.remove('button_colored')
+      )
+
+      target.classList.add('button_colored')
+
       portfolioImagesArr.forEach((img, index) => {
         img.src = `./../assets/img/${currentSeason}/${index + 1}.jpg`
       })
     }
-
-    portfolioButtonsArr.forEach(button =>
-      button.classList.contains('button_colored') &&
-      button.classList.remove('button_colored')
-    )
-
-    target.classList.add('button_colored')
   }
 
   galleriesList.addEventListener('click', switchGallery)

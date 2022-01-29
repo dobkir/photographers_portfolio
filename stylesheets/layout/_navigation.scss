@@ -24,15 +24,13 @@
 
     &.show-mobile-navigation {
       transform: translateX(0);
+      overflow: auto;
     }
   }
 
   @media (max-width: 620px) {
     width: 100vw;
   }
-  // @include media-phone {
-  //   width: 100vw;
-  // }
 }
 
 .nav-list {

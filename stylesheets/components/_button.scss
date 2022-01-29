@@ -4,6 +4,7 @@
 
   background-color: transparent;
   border: 2px solid $brand-color;
+  outline: none;
   cursor: pointer;
 
   @extend %transition;
@@ -15,15 +16,24 @@
 
   &:hover,
   &:focus {
+    background-color: $brand-color;
     box-shadow: 0.3rem 0.3rem 0.3rem rgba($brand-color, 0.6);
     transform: scale(.96);
   }
 
   &:active {
     transform: scale(1);
+    box-shadow: none;
   }
 
   &_colored {
     background-color: $brand-color;
+    color: $bg-color;
+
+    &:focus {
+      transform: scale(1);
+      box-shadow: none;
+      color: $bg-color;
+    }
   }
 }
