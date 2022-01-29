@@ -820,7 +820,7 @@ body {
 }
 @media (max-width: 320px) {
   .hero__about {
-    margin-left: 0;
+    margin: 8rem auto 9.5rem 0;
     text-shadow: 0 -0.5px 0.5px #bdae82, 0 -0.5px 0.5px #bdae82, 0 0.5px 0.5px #bdae82, 0 0.5px 0.5px #bdae82, -0.5px 0 0.5px #bdae82, 0.5px 0 0.5px #bdae82, -0.5px 0 0.5px #bdae82, 0.5px 0 0.5px #bdae82, -0.5px -0.5px 0.5px #bdae82, 0.5px -0.5px 0.5px #bdae82, -0.5px 0.5px 0.5px #bdae82, 0.5px 0.5px 0.5px #bdae82, -0.5px -0.5px 0.5px #bdae82, 0.5px -0.5px 0.5px #bdae82, -0.5px 0.5px 0.5px #bdae82, 0.5px 0.5px 0.5px #bdae82;
   }
 }
@@ -842,13 +842,13 @@ body {
 }
 @media (max-width: 480px) {
   .hero-description {
-    max-width: 14.5rem;
+    max-width: 15rem;
     margin: 1rem 0 2rem 0;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 320px) {
   .hero-description {
-    max-width: 13rem;
+    max-width: 12.5rem;
     margin: 1rem 0 1.5rem 0;
   }
 }

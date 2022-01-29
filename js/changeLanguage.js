@@ -37,7 +37,7 @@ function getTranslate(language) {
         word.textContent = value
         if (word.placeholder) {
           word.placeholder = value
-          word.textContent = ''
+          word.value = ''
         }
       }
     })

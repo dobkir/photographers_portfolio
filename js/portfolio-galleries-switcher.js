@@ -20,7 +20,7 @@ export default function switchPortfolioGallery() {
       target.classList.add('button_colored')
 
       portfolioImagesArr.forEach((img, index) => {
-        img.src = `./../assets/img/${currentSeason}/${index + 1}.jpg`
+        img.src = `./assets/img/${currentSeason}/${index + 1}.jpg`
       })
     }
   }

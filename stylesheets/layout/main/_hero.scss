@@ -15,8 +15,6 @@
 
   @include media-tablet-portrait {
     height: 680px;
-    // background-size: auto 105%;
-    // background-position: 2% 104%;
     background: url(../assets/img/hero-main-photo-media-small.jpg) 50% 0 no-repeat;
   }
 
@@ -46,7 +44,7 @@
   }
 
   @include media-iphone5 {
-    margin-left: 0;
+    margin: 8rem auto 9.5rem 0;
 
     text-shadow:
 		-0   -0.5px 0.5px $brand-color,
@@ -83,12 +81,12 @@
   }
 
   @include media-phone {
-    max-width: 14.5rem;
+    max-width: 15rem;
     margin: 1rem 0 2rem 0;
   }
 
-  @include media-phone {
-    max-width: 13rem;
+  @include media-iphone5 {
+    max-width: 12.5rem;
     margin: 1rem 0 1.5rem 0;
   }
 }
