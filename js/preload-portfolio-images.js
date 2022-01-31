@@ -1,8 +1,8 @@
+import gallerySeasons from "./gallery-seasons.js"
+
 // ==================================== Preload portfolio images ==================================== //
 
 export default function preloadPortfolioImages() {
-
-  const seasons = ['winter', 'spring', 'summer', 'autumn']
 
   function preloadGalleryImages(season) {
     for (let i = 1; i <= 6; i++) {
@@ -11,8 +11,7 @@ export default function preloadPortfolioImages() {
     }
   }
 
-  seasons.forEach(season => preloadGalleryImages(season))
-
+  gallerySeasons.forEach(season => preloadGalleryImages(season))
 }
 
 // ================================= End of Preload portfolio images ================================= //

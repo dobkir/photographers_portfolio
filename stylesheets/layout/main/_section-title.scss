@@ -35,3 +35,14 @@
     margin: 4rem auto 4rem;
   }
 }
+
+.section-title-light {
+
+  >span {
+    background: $bg-light-theme-color;
+  }
+
+  &::after {
+    background: $text-light-theme-color;
+  }
+}

@@ -14,6 +14,7 @@
   background: linear-gradient(180deg, $bg-color 20%, transparent 50%);
 
   @include media-tablet-portrait {
+    justify-content: space-between;
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -22,6 +23,10 @@
     justify-content: space-between;
     padding: 25px;
   }
+}
+
+.container-header-light {
+  background: linear-gradient(180deg, $bg-light-theme-color 20%, transparent 50%);
 }
 
 .logo {
@@ -42,14 +47,18 @@
   }
 }
 
+.logo-light {
+  @include mask("../assets/svg/logo-black.svg", cover, $text-light-theme-color, $brand-color);
+}
+
 .language-switcher {
   display: flex;
   justify-content: space-between;
-  min-width: 70px;
+  min-width: 5rem;
+  margin-left: 1rem;
 
   @include media-tablet-portrait {
-    width: 80px;
-    margin-left: auto;
+    margin-left: 0;
     margin-right: 0;
 
     &>span {
@@ -60,4 +69,34 @@
   @include media-iphone5 {
     padding-right: auto;
   }
+}
+
+.language-switcher_en,
+.language-switcher_ru,
+.theme-switcher {
+  cursor: pointer;
+
+  @extend %transition;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $brand-color;
+  }
+}
+
+.theme-switcher {
+  width: 45px;
+  height: 45px;
+  margin-left: 2.2rem;
+
+  @include mask("../assets/svg/light-theme-icon.svg");
+
+  @include media-tablet-portrait {
+    margin-left: 0;
+  }
+}
+
+.theme-switcher-light {
+  @include mask("../assets/svg/dark-theme-icon.svg", cover, $text-light-theme-color, $brand-color);
 }

@@ -11,11 +11,11 @@
   width: 100%;
   height: 1000px;
 
-  background: url(../assets/img/hero-main-photo.jpg) 50% 0 no-repeat;
+  background: url(../assets/img/dark-theme/hero-main-photo.jpg) 50% 0 no-repeat;
 
   @include media-tablet-portrait {
     height: 680px;
-    background: url(../assets/img/hero-main-photo-media-small.jpg) 50% 0 no-repeat;
+    background: url(../assets/img/dark-theme/hero-main-photo-media-small.jpg) 50% 0 no-repeat;
   }
 
   @include media-phone {
@@ -26,6 +26,14 @@
 
   @include media-iphone5 {
     background-position: 70% 0;
+  }
+}
+
+.container-hero-light {
+  background-image: url(../assets/img/light-theme/hero-main-photo-light.jpg);
+
+  @include media-tablet-portrait {
+    background-image: url(../assets/img/light-theme/hero-main-photo-media-small-light.jpg);
   }
 }
 

@@ -1,11 +1,11 @@
 .nav {
-  width: 100%;
+  flex-grow: 2;
 
   @extend %transition-short;
 
-  @include media-tablet-landscape {
-    width: 90%;
-  }
+  // @include media-tablet-landscape {
+  //   width: 73.5%;
+  // }
 
   @include media-tablet-portrait {
     position: fixed;
@@ -30,6 +30,12 @@
 
   @media (max-width: 620px) {
     width: 100vw;
+  }
+}
+
+.nav-light {
+    @include media-tablet-portrait {
+    background-color: $bg-light-theme-color;
   }
 }
 

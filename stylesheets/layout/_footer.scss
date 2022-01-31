@@ -62,3 +62,7 @@
 .pinterest-link {
   @include mask("../assets/svg/pinterest-white.svg");
 }
+
+.social-link-light {
+  background-color: $text-light-theme-color;
+}

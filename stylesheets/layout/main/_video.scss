@@ -76,3 +76,7 @@
     height: 65px;
   }
 }
+
+.play-video-button-light {
+  @include mask("../assets/svg/play-button-for-video-player-black.svg", cover, $text-light-theme-color, $brand-color);
+}

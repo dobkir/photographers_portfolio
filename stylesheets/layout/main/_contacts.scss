@@ -5,7 +5,7 @@
   padding-top: 3.75rem;
   padding-right: 1.25rem;
 
-  background: url(../assets/img/hero-additional-photo.jpg) 50% 50% no-repeat;
+  background: url(../assets/img/dark-theme/hero-additional-photo.jpg) 50% 50% no-repeat;
   background-size: auto 700px;
 
   @include media-tablet-portrait {
@@ -17,6 +17,10 @@
   @include media-phone {
     background-position: 15% 0;
   }
+}
+
+.contacts-light {
+  background-image: url(../assets/img/light-theme/hero-additional-photo-light.jpg);
 }
 
 .container-contacts {
@@ -100,3 +104,26 @@
   }
 }
 
+.contact-form-light {
+  &>input,
+  &>textarea {
+    color: $text-light-theme-color;
+
+    background-color: rgba($bg-light-theme-color, 0.5);
+    caret-color: $text-light-theme-color;
+
+    &::placeholder {
+      color: $text-light-theme-color;
+    }
+
+    &:focus {
+    color: $text-light-theme-color;
+    outline: none;
+    box-shadow: 0.4rem 0.4rem 0.5rem rgba($text-light-theme-color, 0.6);
+
+      &::placeholder {
+        color: $brand-color;
+      }
+    }
+  }
+}
