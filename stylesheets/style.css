@@ -1,4 +1,5 @@
-.button, .social-link, .contact-form > input, .contact-form > textarea, .play-video-button, .language-switcher_en,
+.button, .social-link, .contact-form > input, .contact-form > textarea, .timeline,
+.volume, .control-button, .controls, .play-video-button, .video-presentation, .language-switcher_en,
 .language-switcher_ru,
 .theme-switcher, .logo, a {
   transition: all 0.4s ease-in-out;
@@ -605,6 +606,10 @@ figure {
   white-space: nowrap;
 }
 
+.hidden {
+  display: none;
+}
+
 .hamburger-button {
   position: relative;
   z-index: 3;
@@ -1133,11 +1138,14 @@ figure {
 
 .video-presentation {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 36.63003663vw;
+  height: 100%;
   margin: 0 auto;
-  background: url(../assets/img/wedding-videos-poster.jpg) 50% 50% no-repeat;
-  background-size: cover;
+  overflow: hidden;
 }
 @media (max-width: 1199px) {
   .video-presentation {
@@ -1149,7 +1157,6 @@ figure {
   .video-presentation {
     width: 100%;
     height: 54.0540540541vw;
-    background: url(../assets/img/wedding-videos-poster-small.jpg) 50% 50% no-repeat;
   }
 }
 @media (max-width: 480px) {
@@ -1165,6 +1172,7 @@ figure {
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 2;
   width: 130px;
   height: 130px;
   margin: auto;
@@ -1212,6 +1220,131 @@ figure {
 }
 .play-video-button-light:active {
   background-color: #ab9861;
+}
+
+.video-viewer {
+  width: 100%;
+  height: auto;
+}
+
+.controls {
+  position: absolute;
+  left: 1px;
+  right: 1px;
+  bottom: 1px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: calc(100% - 2px);
+  height: 60px;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: translateY(61px);
+}
+
+.video-presentation:hover,
+.video-presentation.hover {
+  outline: 1px solid #bdae82;
+}
+.video-presentation:hover .controls,
+.video-presentation.hover .controls {
+  transform: translateY(0);
+}
+
+.controls__first-line,
+.controls__second-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.controls__first-line {
+  min-width: 75%;
+}
+
+.controls__second-line {
+  min-width: 25%;
+}
+
+.control-button {
+  width: 36px;
+  height: 36px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .control-button {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.control-button:hover,
+.control-button:focus,
+.control-button:active {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+.play-icon {
+  background-image: url("../assets/svg/video-player/play.svg");
+}
+
+.pause-icon {
+  background-image: url("../assets/svg/video-player/pause.svg");
+}
+
+.reload-icon {
+  background-image: url("../assets/svg/video-player/reload.svg");
+}
+
+.volume-icon {
+  background-image: url("../assets/svg/video-player/volume.svg");
+}
+
+.mute-icon {
+  background-image: url("../assets/svg/video-player/mute.svg");
+}
+
+.fullscreen-icon {
+  background-image: url("../assets/svg/video-player/fullscreen.svg");
+}
+
+.fullscreen-exit-icon {
+  background-image: url("../assets/svg/video-player/fullscreen-exit.svg");
+}
+
+.timeline,
+.volume {
+  height: 10px;
+  background: linear-gradient(to right, #bdae82 0%, #bdae82 40%, #b3b3b3 40%, #b3b3b3 100%);
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.timeline {
+  width: calc(100% - 100px);
+  min-width: 260px;
+}
+
+.volume {
+  width: calc(100% - 160px);
+  min-width: 120px;
+}
+
+.timeline::-webkit-slider-thumb,
+.volume::-webkit-slider-thumb {
+  width: 15px;
+  height: 15px;
+  background: #b3b3b3;
+  border-radius: 50%;
+  -webkit-appearance: none;
+  cursor: ew-resize;
 }
 
 .price-list {

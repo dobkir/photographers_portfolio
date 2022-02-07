@@ -233,9 +233,31 @@
 
           <h2 class="section-title" data-theme="section-title"><span data-i18="video">Video</span></h2>
 
-          <figure class="video-presentation">
+          <div class="video-presentation">
+
+            <video class="video-viewer" preload="auto" poster="assets/img/wedding-videos-poster.jpg">
+              <source src="assets/video/video.mp4" type="video/mp4" />
+              <source src="assets/video/video.webm" type="video/webm" />
+              <p>To view this video please enable JavaScript, and consider upgrading to a
+                web browser that supports HTML5 video</p>
+            </video>
             <button class="play-video-button" title="press to play video" data-theme="play-video-button"></button>
-          </figure>
+            <!-- /.video-viewer -->
+
+            <div class="controls">
+              <div class="controls__first-line">
+                <button class="control-button play-icon" title="Click to play/pause video"></button>
+                <input class="timeline" type="range" value="0" min="0" max="100" step="0.05">
+              </div>
+              <div class="controls__second-line">
+                <button class="control-button volume-icon" title="Click to mute/unmute the sound."></button>
+                <input class="volume" type="range" value="40" min="0" max="100" step="1">
+                <button class="control-button fullscreen-icon" title="Click to fullscreen/exit fullscreen"></button>
+              </div>
+            </div>
+            <!-- /.controls -->
+
+          </div>
           <!-- /.video-presentation -->
 
         </div>
