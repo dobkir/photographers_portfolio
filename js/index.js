@@ -9,4 +9,3 @@ smoothScrollFunction()
 mobileMenuFunction()
 preloadPortfolioImages()
 switchPortfolioGallery()
-

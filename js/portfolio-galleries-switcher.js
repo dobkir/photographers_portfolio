@@ -7,20 +7,31 @@ const portfolioImagesArr = document.querySelectorAll('.gallery-image')
 const galleriesList = document.querySelector('.galleries-list')
 const randomSeason = Math.floor(Math.random() * gallerySeasons.length)
 
+
+
 function changeActiveButtonStyle() {
   const buttonsPortfolioArr = document.querySelectorAll('[data-season]')
 
   buttonsPortfolioArr.forEach(button => {
-    if (button.dataset.season === gallerySeasons[randomSeason]) {
-      if (button.classList.contains('button_colored-light')) {
-        button.classList.contains('button_active') && button.classList.remove('button_active')
-        button.classList.add('button_colored-light_active')
-      } else {
-        button.classList.contains('button_colored-light_active') && button.classList.remove('button_colored-light_active')
-        button.classList.add('button_active')
+
+    portfolioImagesArr.forEach(img => {
+      const pathArr = img.src.split("/")
+      const fileDirectory = pathArr[pathArr.length - 2]
+
+      if (button.dataset.season === fileDirectory) {
+        if (button.classList.contains('button_colored-light')) {
+          button.classList.contains('button_active') && button.classList.remove('button_active')
+          button.classList.add('button_colored-light_active')
+        } else {
+          button.classList.contains('button_colored-light_active') && button.classList.remove('button_colored-light_active')
+          button.classList.add('button_active')
+        }
       }
-    }
+
+    })
+
   })
+
 }
 
 function switchPortfolioGallery() {
@@ -42,12 +53,16 @@ function switchPortfolioGallery() {
     if (target.classList.contains('button_portfolio')) {
       const currentSeason = target.dataset.season
 
-      portfolioButtonsArr.forEach(button =>
-        button.classList.contains('button_active') &&
+      portfolioButtonsArr.forEach(button => {
         button.classList.remove('button_active')
-      )
+        button.classList.remove('button_colored-light_active')
+      })
 
-      target.classList.add('button_active')
+      if (target.classList.contains('button_colored-light')) {
+        target.classList.add('button_colored-light_active')
+      } else {
+        target.classList.add('button_active')
+      }
 
       showGallery(currentSeason)
     }

@@ -77,12 +77,6 @@
   cursor: pointer;
 
   @extend %transition;
-
-  &:hover,
-  &:focus,
-  &:active {
-    color: $brand-color;
-  }
 }
 
 .theme-switcher {

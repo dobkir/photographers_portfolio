@@ -52,7 +52,11 @@
   }
 
   @include media-iphone5 {
+<<<<<<< HEAD
+    margin-left: 0;
+=======
     margin: 8rem auto 9.5rem 0;
+>>>>>>> portfolio-part3
 
     text-shadow:
 		-0   -0.5px 0.5px $brand-color,
@@ -89,12 +93,21 @@
   }
 
   @include media-phone {
+<<<<<<< HEAD
+    max-width: 14.5rem;
+    margin: 1rem 0 2rem 0;
+  }
+
+  @include media-phone {
+    max-width: 13rem;
+=======
     max-width: 15rem;
     margin: 1rem 0 2rem 0;
   }
 
   @include media-iphone5 {
     max-width: 12.5rem;
+>>>>>>> portfolio-part3
     margin: 1rem 0 1.5rem 0;
   }
 }

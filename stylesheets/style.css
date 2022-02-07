@@ -455,9 +455,22 @@ figure {
   text-shadow: 1px 1px 2px white;
 }
 
-.nav-list,
-.language-switcher {
+.nav-list {
   font: normal 400 1.25rem/3.13rem "Inter-Regular";
+}
+
+.language-switcher {
+  font: normal 700 1.25rem/2.5rem "Inter-Bold";
+}
+
+.language-switcher_en:hover, .language-switcher_en:focus, .language-switcher_en:active,
+.language-switcher_ru:hover,
+.language-switcher_ru:focus,
+.language-switcher_ru:active,
+.theme-switcher:hover,
+.theme-switcher:focus,
+.theme-switcher:active {
+  color: #bdae82;
 }
 
 @media (max-width: 768px) {
@@ -541,6 +554,10 @@ figure {
 .active-link,
 .text-gold {
   color: #bdae82;
+}
+
+.active-link {
+  text-shadow: 1px 1px 2px white;
 }
 
 /**
@@ -766,15 +783,6 @@ figure {
 .language-switcher_ru,
 .theme-switcher {
   cursor: pointer;
-}
-.language-switcher_en:hover, .language-switcher_en:focus, .language-switcher_en:active,
-.language-switcher_ru:hover,
-.language-switcher_ru:focus,
-.language-switcher_ru:active,
-.theme-switcher:hover,
-.theme-switcher:focus,
-.theme-switcher:active {
-  color: #bdae82;
 }
 
 .theme-switcher {
@@ -1534,6 +1542,9 @@ figure {
   border: 2px solid #ffffff;
 }
 .button-light:hover, .button-light:focus {
+  color: #bdae82;
+  background-color: #1c1c1c;
+  border: 2px solid #1c1c1c;
   box-shadow: 0.3rem 0.3rem 0.3rem rgba(28, 28, 28, 0.6);
 }
 
@@ -1543,16 +1554,11 @@ figure {
   border: 2px solid #bdae82;
 }
 
-.button-light:hover, .button-light:focus, .button-light:active, .button-light_active,
-.button_colored-light:hover,
-.button_colored-light:focus,
-.button_colored-light:active,
-.button_colored-light_active {
+.button_colored-light:hover, .button_colored-light:focus, .button_colored-light:active, .button_colored-light_active {
   color: #bdae82;
   background-color: #1c1c1c;
   border: 2px solid #bdae82;
 }
-.button-light_active:focus,
 .button_colored-light_active:focus {
   transform: scale(1);
   box-shadow: none;

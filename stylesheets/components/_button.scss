@@ -45,6 +45,10 @@
 
   &:hover,
   &:focus {
+    color: $brand-color;
+    
+    background-color: $text-light-theme-color;
+    border: 2px solid $text-light-theme-color;
     box-shadow: 0.3rem 0.3rem 0.3rem rgba($text-light-theme-color, 0.6);
   }
 }
@@ -56,7 +60,6 @@
   border: 2px solid $brand-color;
 }
 
-.button-light,
 .button_colored-light {
   &:hover,
   &:focus,
