@@ -8,7 +8,7 @@
 ![Repository size][repo-size-shield]&nbsp;
 
 ### Website preview
-![Website trailer][product-screenshot]
+![Website trailer][product-screenshot-main]
 ### Website on mobile devices preview
 ![Website on mobile devices trailer][product-screenshot-mobile_devices]
 
@@ -86,5 +86,5 @@ Project Link: [https://github.com/dobkir/photographers_portfolio](https://github
 [repo-size-shield]: https://img.shields.io/github/repo-size/dobkir/photographers_portfolio.svg?style=for-the-badge
 [languages-shield]: https://img.shields.io/github/languages/count/dobkir/photographers_portfolio.svg?style=for-the-badge
 [main-language-shield]: https://img.shields.io/github/languages/top/dobkir/photographers_portfolio.svg?style=for-the-badge&color=e34c26
-[product-screenshot-main_page]: https://github.com/dobkir/trailers/blob/master/photographers_portfolio/portfolio_main_trailer.gif
+[product-screenshot-main]: https://github.com/dobkir/trailers/blob/master/photographers_portfolio/portfolio_main_trailer.gif
 [product-screenshot-mobile_devices]: https://github.com/dobkir/trailers/blob/master/photographers_portfolio/portfolio_mobile_trailer.gif
