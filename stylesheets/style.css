@@ -1550,12 +1550,6 @@ figure {
   }
 }
 
-@media (max-width: 768px) {
-  .rsschool-link {
-    margin-top: 1rem;
-  }
-}
-
 .social-links {
   width: 188px;
 }

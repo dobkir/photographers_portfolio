@@ -24,12 +24,6 @@
   }
 }
 
-.rsschool-link {
-  @include media-tablet-portrait {
-    margin-top: 1rem;
-  }
-}
-
 .social-links {
   @extend %flex-centered-items-space-btw;
   width: 188px;
