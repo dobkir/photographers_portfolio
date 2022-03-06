@@ -1,4 +1,4 @@
-# ![Landing page icon](/assets/img/icons8-camera-with-flash-48.png) Photographer's portfolio ![Landing page icon](/assets/img/icons8-camera-with-flash-48.png)
+# ![Photographer's portfolio icon](/assets/img/icons8-camera-with-flash-48.png) Photographer's portfolio ![Photographer's portfolio icon](/assets/img/icons8-camera-with-flash-48.png)
 
 [![Contributors][contributors-shield]][contributors-url]&nbsp;
 [![Forks][forks-shield]][forks-url]&nbsp;
