@@ -85,6 +85,6 @@ Project Link: [https://github.com/dobkir/photographers_portfolio](https://github
 [license-url]: https://github.com/dobkir/photographers_portfolio/blob/master/LICENSE.txt
 [repo-size-shield]: https://img.shields.io/github/repo-size/dobkir/photographers_portfolio.svg?style=for-the-badge
 [languages-shield]: https://img.shields.io/github/languages/count/dobkir/photographers_portfolio.svg?style=for-the-badge
-[main-language-shield]: https://img.shields.io/github/languages/top/dobkir/photographers_portfolio.svg?style=for-the-badge&color=c6538c
+[main-language-shield]: https://img.shields.io/github/languages/top/dobkir/photographers_portfolio.svg?logo=SASS&logoColor=c6538c&style=for-the-badge&color=c6538c
 [product-screenshot-main]: https://github.com/dobkir/trailers/blob/master/photographers_portfolio/portfolio_main_trailer.gif
 [product-screenshot-mobile_devices]: https://github.com/dobkir/trailers/blob/master/photographers_portfolio/portfolio_mobile_trailer.gif
