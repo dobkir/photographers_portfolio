@@ -34,7 +34,7 @@ The following features are implemented in this project:<br>
 ## [Come here](https://dobkir.github.io/photographers_portfolio/) to watch this website on your Web Browser
 
 <!-- TOOLS -->
-### Built With
+### Built with
 
 - Languages<br>
 ![Languages][languages-shield]
