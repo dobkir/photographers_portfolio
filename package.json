@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Pavel Kirillov",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "linthtml-config-htmlacademy": "^1.0.3",
     "stylelint-config-htmlacademy": "^0.1.12"
