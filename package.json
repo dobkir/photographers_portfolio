@@ -2,13 +2,18 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "Photographer Portfolio Website",
+  "author": "Pavel Kirillov <dobkir@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://dobkir.github.io/photographers_portfolio/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dobkir/photographers_portfolio"
+  },
   "main": "index.js",
   "scripts": {
     "style": "sass --watch stylesheets/style.scss stylesheets/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Pavel Kirillov",
-  "license": "MIT",
   "devDependencies": {
     "linthtml-config-htmlacademy": "^1.0.3",
     "stylelint-config-htmlacademy": "^0.1.12"
